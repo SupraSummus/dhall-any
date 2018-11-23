@@ -1,0 +1,44 @@
+start: start
+
+productions:
+  start:
+    - [_*, judgements, _*]
+  judgements:
+    - [judgement]
+    - [judgements, __, judgement]
+  judgement:
+    - [facts, _*, line, _*, fact]
+  facts:
+    - [fact]
+    - [facts, __, fact]
+  fact:
+    - [term, _, "⇥", _, term]
+  term:
+    - [var]
+    - ["[", _, var, "…", _, "]"]
+    - ["[", _, var, ",", _, var, "…", _, "]"]
+
+  ### whitespaces of many kind ###
+  _*:  # optional whitespaces
+    - []
+    - [_*, space]
+    - [_*, newline]
+  _:  # weak whitespace
+    - [space]
+  __:  # strong whitespace
+    - [space*, space, space]
+    - [space*, newline, _*]
+  space*:
+    - []
+    - [space*, space]
+
+terminals:
+  space: [string, " "]
+  newline: [string, "\n"]
+  var: [regexp, "[A-Za-z]+[₀-₉]*"]
+  line: [regexp, "[─]+"]
+  "[": [string, "["]
+  "]": [string, "]"]
+  "⇥": [string, "⇥"]
+  "…": [string, "…"]
+  ",": [string, ","]
