@@ -1,6 +1,3 @@
-[submodule "dhall-python"]
-	path = dhall-python
-	url = https://github.com/SupraSummus/dhall-python.git
 [submodule "dhall-lang"]
 	path = dhall-lang
 	url = https://github.com/dhall-lang/dhall-lang.git

@@ -2,43 +2,359 @@ start: start
 
 productions:
   start:
-    - [_*, judgements, _*]
+    - [judgements, nl]
   judgements:
+    - [judgements, nl, judgement]
     - [judgement]
-    - [judgements, __, judgement]
   judgement:
-    - [facts, _*, line, _*, fact]
+    - [
+        facts, maybe_comment, nl,
+        judgement_line, nl,
+        fact, maybe_comment,
+      ]
+    - [judgement_line, nl, fact, maybe_comment]
+  judgement_line:
+    - [line]
+    - [line, _, _, ";", _, not_a_newline]
   facts:
-    - [fact]
     - [facts, __, fact]
+    - [fact]
   fact:
-    - [term, _, "⇥", _, term]
-  term:
+    - ["↑", "(", inc_or_dec, comma, var_or_label, comma, nat, comma, expr0, ")", _, "=", _, expr0]  # term/expression shift
+    - ["↑", "(", inc_or_dec, comma, var_or_label, comma, nat, comma, context, ")", _, "=", _, context]  # context shift
+    - [expr0, "[", var, "@", nat, _, "≔", _, expr0, "]", _,  "=", _, expr0]
+    - [expr0, "[", var, _, "≔", _, expr0, "]", _,  "=", _, expr0]
+    - [expr0, _, "↦", _, expr0]
+    - [expr0, _, "⇥", _, expr0]
+    - [expr0, _, "≡", _, expr0]
+    - [encode, "(", var, ")", _, "=", _, var]
+    - [expr0, _, "↝", _, expr0, _, ":", _, expr0]
+    - [context, _, "⊢", _, expr0, _, ":", "⇥", _, expr0]
+    - [context, _, "⊢", _, expr0, _, ":", _, expr0]
+    - [expr0, _, ":", "⇥", _, expr0]
+  context:
+    - [ε]
+    - [context_var]
+    - [context_var, ",", _, var, _, ":", _, var]
+    - ["(", context, ")"]
+
+  expr0:
+    - [expr0, _, "→", _, expr1]
+    - [expr1]
+  expr1:
+    - [let, _, var_or_label, _,                 "=", _, var, _,                  in, _, var]
+    - [let, _, var_or_label, _, ":", _, var, _, "=", _, var, _,                  in, _, var]
+    - [let, _,                                                          var*, _, in, _, var]
+    - [let, _, var_or_label, _,                 "=", _, var, _, let, _, var*, _, in, _, var]
+    - [let, _, var_or_label, _, ":", _, var, _, "=", _, var, _, let, _, var*, _, in, _, var]
+
+    - [if, _, var, _, then, _, var, _, else, _, var]
+
+    - ["λ", "(", var_or_label, _, ":", _, expr0, ")", _, "→", _, expr1]
+    - ["∀", "(", var_or_label, _, ":", _, expr0, ")", _, "→", _, expr1]
+
+    - ["[", "]", _, ":", _, "List", _, expr1]
+    - ["[", "]", _, ":", _, "Optional", _, expr1]
+    - ["[", _, var, _, "]", _, ":", _, "Optional", _, var]
+
+    - [expr2, _, binop0, _, expr2]
+    - [expr2]
+  expr2:
+    - [expr3, _, binop1, _, expr3]
+    - [expr2, _, expr3]  # application
+    - [merge, _, expr3, _, expr3, _, ":", _, var]
+    - [merge, _, expr3, _, expr3]
+    - [expr3, _, ":", _, expr3]
+    - ["[", _, var, _, "]"]
+    - [expr3]
+  expr3:
+    - ["(", expr0, ")"]
     - [var]
-    - ["[", _, var, "…", _, "]"]
-    - ["[", _, var, ",", _, var, "…", _, "]"]
+
+    - [var_or_label, "@", nat]
+    - [quoted_label]
+
+    - ["0"]
+    - ["1"]
+
+    - ["[", _, var*, _, "]"]
+    - ["[", _, var, ",", _, var*, _, "]"]
+    #- ["[", _, "…", ",", _, value_var, _, "]"]
+
+    - [expr3, _, binop2, _, var]
+
+    - [expr3, ".", var]
+    - [var, ".", "{", "}"]
+    - [expr3, ".", "{", _, var, _, "}"]
+    - [expr3, ".", "{", _, var*, _, "}"]
+    - [expr3, ".", "{", _, var, ",", _, var*, _, "}"]
+
+    - [var_nat, ".", var_nat]  # double literal
+    - ['"', var_nat, ".", var_nat, '"']  # conversion double -> text
+    - [var_nat]  # natural literal
+    - ["+", var_nat]  # conversion natural -> integer
+    - ['"', var_nat, '"']  # conversion natural -> text
+    - ["±", var_nat]  # integer literal
+    - ["±", var_nat, ".", "0"]  # conversion int -> double
+    - ['"', "±", var_nat, '"']  # conversion int -> text
+
+    - ['"', '"']
+    - ['"', var_string, '"']  # string literal
+    - ['"', var_string, var_string, '"']
+    - ['"', var_string*, '"']  # string literal with induction
+    - ['"', var_string, var_string, var_string*, '"']
+    - ['"', var_string, "$", "{", var, "}", var_string*, '"']  # string interpolation
+    - ['"', var_string, var_string, "$", "{", var, "}", var_string*, var_string*, '"']  # string interpolation
+
+    - ["{", "}"]  # empty record type
+    - ["{", _, record_type_fields, var_or_label, _, ":", _, expr0, _, "}"]
+    - ["{", _, record_type_fields, var*, _, "}"]
+    - ["{", "=", "}"]
+    - ["{", _, var, _, "=", _, var, _, "}"]
+    - ["{", _, var, _, "=", _, var, ",", _, var*, _, "}"]
+
+    - ["<", ">"]
+    - ["<", _, var*, _, ">"]
+    - ["<", _, var, _, ":", _, var, _, "|", _, var*, _, ">"]
+    - ["<", _, var, _, "|", _, var*, _, ">"]
+    - ["<", _, var, _, "=", _, var, _, ">"]
+    - ["<", _, var, _, "=", _, var, _, "|", _, var*, _, ">"]
+    - ["<", _, var, _, "=", _, var, _, "|", _, var, _, ":", _, var, _, "|", _, var*, _, ">"]
+
+    - [Some, _, var]
+    - [None]
+    - [Natural, /, natural_builtin]
+    - [Integer, /, toDouble]
+    - [Integer, /, show]
+    - [Double, /, show]
+    - [List, /, list_builtin]
+    - [Optional, /, fold]
+    - [Optional, /, build]
+    - [Text, /, show]
+    - [Bool]
+    - [Optional]
+    - [Natural]
+    - [List]
+    - [Integer]
+    - [Double]
+    - [Text]
+    - ["True"]
+    - ["False"]
+    - [Type]
+    - [Kind]
+    - [Sort]
+
+    # imports
+    - [path, _, file]
+    - [., _, path, _, file]
+    - [".", ".", _, path, _, file]
+    - ["~", _, path, _, file]
+    - ["https://authority", _, path, _, file]
+    - ["env:x"]
+
+  natural_builtin:
+    - [build]
+    - [fold]
+    - [isZero]
+    - [even]
+    - [odd]
+    - [toInteger]
+    - [show]
+  list_builtin:
+    - [build]
+    - [fold]
+    - [length]
+    - [head]
+    - [last]
+    - [indexed]
+    - [reverse]
+  binop0:
+    - ["#"]
+  binop1:
+    #- ["#"]
+    - ["+"]
+    - ["*"]
+    - ["∧"]
+    - ["⫽"]
+    - ["⩓"]
+  binop2:
+    - ["||"]
+    - ["++"]
+    - ["&&"]
+    - ["=="]
+    - ["!="]
+    - ["?"]
+
+  record_type_fields:
+    - []
+    - [record_type_fields, var_or_label, _, ":", _, expr0, ",", _]
 
   ### whitespaces of many kind ###
-  _*:  # optional whitespaces
-    - []
-    - [_*, space]
-    - [_*, newline]
   _:  # weak whitespace
     - [space]
   __:  # strong whitespace
-    - [space*, space, space]
-    - [space*, newline, _*]
+    - [space, space, space]
+    - [maybe_comment, nl]
+  maybe_comment:
+    - []
+    - [space*, ";", _, not_a_newline]
   space*:
     - []
     - [space*, space]
 
+  comma:
+    - [",", _]
+
+  inc_or_dec:
+    - ["1"]
+    - ["-", "1"]
+    - ["d"]
+  nat:
+    - ["0"]
+    - [var_nat]
+    #- [nat, _, "+", _, "d"]
+    - ["1", _, "+", _, nat]
+    - [nat, _, "+", _, "1"]
+    - ["(", nat, ")"]
+
+  var:
+    - [value_var]
+    - [type_letter_with_maybe_index]
+  value_var:
+    - [var_letter_with_maybe_index]
+    # special vars
+    - [succ]
+    - [natural]
+    - [zero]
+    - [list]
+    - [cons]
+    - [nil]
+    - [optional]
+    - [just]
+    - [nothing]
+  var*:
+    - ["…"]
+    - [var_letter_with_maybe_index, "…"]
+
+  var_string:
+    - [_var_string]
+  var_string*:
+    - [s, _var_string, "…"]
+
+  var_or_label:
+    - [var]
+    - [quoted_label]
+
 terminals:
   space: [string, " "]
-  newline: [string, "\n"]
-  var: [regexp, "[A-Za-z]+[₀-₉]*"]
+  nl: [string, "\n"]
+  #nl: [regexp, "\n| *;[^\n]*\n"]
+  #comment: [regexp, " *;[^\n]*"]
+  not_a_newline: [regexp, "[^\n]+"]
+  var_letter_with_maybe_index: [regexp, "[abcefgiklortuvxy]s?[₀-₉]*"]
+  type_letter_with_maybe_index: [regexp, "[ABTLR][₀-₉]*"]
+  _var_string: [regexp, "s[₀-₉]*"]
+  context_var: [regexp, "Γ[₀-₉]*"]
+  field: [regexp, "[a-z]+"]
   line: [regexp, "[─]+"]
-  "[": [string, "["]
-  "]": [string, "]"]
-  "⇥": [string, "⇥"]
-  "…": [string, "…"]
-  ",": [string, ","]
+  var_nat: [regexp, "m|n"]
+  quoted_label: [regexp, "`[a-zA-Z_]+`"]
+  #raw_nat: [regexp, "0|([1-9][0-9]*)"]
+
+string_terminals:
+  - "!="
+  - "#"
+  - "&&"
+  - "("
+  - ")"
+  - "*"
+  - "+"
+  - "++"
+  - ","
+  - "."
+  - "/"
+  - ":"
+  - ";"
+  - "<"
+  - "="
+  - "=="
+  - ">"
+  - "?"
+  - "@"
+  - "["
+  - "]"
+  - "{"
+  - "|"
+  - "||"
+  - "}"
+  - "~"
+  - "±"
+  - "…"
+  - "↑"
+  - "→"
+  - "↝"
+  - "↦"
+  - "⇥"
+  - "∀"
+  - "∧"
+  - "≔"
+  - "≡"
+  - "⊢"
+  - "⩓"
+  - "⫽"
+  - '"'
+  - "$"
+  - "0"
+  - "Bool"
+  - "build"
+  - "cons"
+  - "Double"
+  - "else"
+  - "encode"
+  - "env:x"
+  - "even"
+  - "False"
+  - "file"
+  - "fold"
+  - "head"
+  - "https://authority"
+  - "if"
+  - "in"
+  - "indexed"
+  - "Integer"
+  - "isZero"
+  - "just"
+  - "Kind"
+  - "last"
+  - "length"
+  - "let"
+  - "list"
+  - "List"
+  - "merge"
+  - "natural"
+  - "Natural"
+  - "nil"
+  - "None"
+  - "nothing"
+  - "odd"
+  - "optional"
+  - "Optional"
+  - "path"
+  - "reverse"
+  - "s"
+  - "show"
+  - "Some"
+  - "Sort"
+  - "succ"
+  - "Text"
+  - "then"
+  - "toDouble"
+  - "toInteger"
+  - "True"
+  - "Type"
+  - "zero"
+  - "ε"
+  - "λ"
+  - "1"
+  - "-"
+  - "d"

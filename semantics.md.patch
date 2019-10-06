@@ -1,0 +1,327 @@
+--- dhall-lang/standard/semantics.md	2019-10-06 15:29:05.191006224 +0200
++++ build/semantics.md	2019-04-04 23:02:32.528698000 +0200
+@@ -276,11 +276,11 @@
+ non-empty list says that to normalize a list you normalize the head of the list
+ and then normalize the tail:
+ 
+-
+-    t₀ ⇥ t₁   [ ts₀… ] ⇥ [ ts₁… ]
+-    ─────────────────────────────
+-    [ t₀, ts₀… ] ⇥ [ t₁, ts₁… ]
+-
++```
++t₀ ⇥ t₁   [ ts₀… ] ⇥ [ ts₁… ]
++─────────────────────────────
++[ t₀, ts₀… ] ⇥ [ t₁, ts₁… ]
++```
+ 
+ Note that this notation does not imply that implementations must use induction
+ or inductive data structures (like linked lists) to implement lists, records, or
+@@ -385,8 +385,8 @@
+ large as the lower bound:
+ 
+ 
+-    ───────────────────────────  ; m <= n
+-    ↑(d, x, m, x@n) = x@(n + d)
++;    ───────────────────────────  ; m <= n
++;    ↑(d, x, m, x@n) = x@(n + d)
+ 
+ 
+ Don't shift the index if the index falls short of the lower bound:
+@@ -984,10 +984,11 @@
+ Substitution avoids bound variables by increasing the index when a new bound
+ variable of the same name is in scope, like this:
+ 
+-
+-    …   b₀[x@(1 + n) ≔ e₁] = b₁   …
+-    ───────────────────────────────
+-    …
++```
++…   b₀[x@(1 + n) ≔ e₁] = b₁   …
++───────────────────────────────
++…
++```
+ 
+ 
+ Substitution also avoids variable capture, like this:
+@@ -999,9 +1000,11 @@
+ scope, like this:
+ 
+ 
+-    …   ↑(1, y, 0, e₀) = e₁   …
+-    ───────────────────────────
+-    …
++```
++…   ↑(1, y, 0, e₀) = e₁   …
++───────────────────────────
++…
++```
+ 
+ 
+ All of the following rules cover expressions that can bind variables:
+@@ -1494,95 +1497,95 @@
+     A₀ ↦ A₁
+     b₀ ↦ b₁
+     ───────────────────────────────
+-    λ(_ : A₀) → b₀ ↦ λ(_ : A₁) → b₁
++    λ(`_` : A₀) → b₀ ↦ λ(`_` : A₁) → b₁
+ 
+ 
+     A₀ ↦ A₁
+-    ↑(1, _, 0, b₀) = b₁
+-    b₁[x ≔ _] = b₂
++    ↑(1, `_`, 0, b₀) = b₁
++    b₁[x ≔ `_`] = b₂
+     ↑(-1, x, 0, b₂) = b₃
+     b₃ ↦ b₄
+-    ───────────────────────────────  ; x ≠ _
+-    λ(x : A₀) → b₀ ↦ λ(_ : A₁) → b₄
++    ───────────────────────────────  ; x ≠ `_`
++    λ(x : A₀) → b₀ ↦ λ(`_` : A₁) → b₄
+ 
+ 
+     A₀ ↦ A₁
+     B₀ ↦ B₁
+     ───────────────────────────────
+-    ∀(_ : A₀) → B₀ ↦ ∀(_ : A₁) → B₁
++    ∀(`_` : A₀) → B₀ ↦ ∀(`_` : A₁) → B₁
+ 
+ 
+     A₀ ↦ A₁
+-    ↑(1, _, 0, B₀) = B₁
+-    B₁[x ≔ _] = B₂
++    ↑(1, `_`, 0, B₀) = B₁
++    B₁[x ≔ `_`] = B₂
+     ↑(-1, x, 0, B₂) = B₃
+     B₃ ↦ B₄
+-    ───────────────────────────────  ; x ≠ _
+-    ∀(x : A₀) → B₀ ↦ ∀(_ : A₁) → B₄
++    ───────────────────────────────  ; x ≠ `_`
++    ∀(x : A₀) → B₀ ↦ ∀(`_` : A₁) → B₄
+ 
+ 
+     a₀ ↦ a₁
+     A₀ ↦ A₁
+     b₀ ↦ b₁
+     ─────────────────────────────────────────────
+-    let _ : A₀ = a₀ in b₀ ↦ let _ : A₁ = a₁ in b₁
++    let `_` : A₀ = a₀ in b₀ ↦ let `_` : A₁ = a₁ in b₁
+ 
+ 
+     a₀ ↦ a₁
+     A₀ ↦ A₁
+-    ↑(1, _, 0, b₀) = b₁
+-    b₁[x ≔ _] = b₂
++    ↑(1, `_`, 0, b₀) = b₁
++    b₁[x ≔ `_`] = b₂
+     ↑(-1, x, 0, b₂) = b₃
+     b₃ ↦ b₄
+-    ─────────────────────────────────────────────  ; x ≠ _
+-    let x : A₀ = a₀ in b₀ ↦ let _ : A₁ = a₁ in b₄
++    ─────────────────────────────────────────────  ; x ≠ `_`
++    let x : A₀ = a₀ in b₀ ↦ let `_` : A₁ = a₁ in b₄
+ 
+ 
+     a₀ ↦ a₁
+     b₀ ↦ b₁
+     ───────────────────────────────────
+-    let _ = a₀ in b₀ ↦ let _ = a₁ in b₁
++    let `_` = a₀ in b₀ ↦ let `_` = a₁ in b₁
+ 
+ 
+     a₀ ↦ a₁
+-    ↑(1, _, 0, b₀) = b₁
+-    b₁[x ≔ _] = b₂
++    ↑(1, `_`, 0, b₀) = b₁
++    b₁[x ≔ `_`] = b₂
+     ↑(-1, x, 0, b₂) = b₃
+     b₃ ↦ b₄
+-    ───────────────────────────────────  ; x ≠ _
+-    let x = a₀ in b₀ ↦ let _ = a₁ in b₄
++    ───────────────────────────────────  ; x ≠ `_`
++    let x = a₀ in b₀ ↦ let `_` = a₁ in b₄
+ 
+ 
+     a₀ ↦ a₁
+     A₀ ↦ A₁
+     let xs₀… in b₀ ↦ let xs₁… in b₁
+     ───────────────────────────────────────────────────────────────
+-    let _ : A₀ = a₀ let xs₀… in b₀ ↦ let _ : A₁ = a₁ let xs₁… in b₁
++    let `_` : A₀ = a₀ let xs₀… in b₀ ↦ let `_` : A₁ = a₁ let xs₁… in b₁
+ 
+ 
+     a₀ ↦ a₁
+     A₀ ↦ A₁
+-    ↑(1, _, 0, b₀) = b₁
+-    b₁[x ≔ _] = b₂
++    ↑(1, `_`, 0, b₀) = b₁
++    b₁[x ≔ `_`] = b₂
+     ↑(-1, x, 0, b₂) = b₃
+     let xs₀… in b₃ ↦ let xs₁… in b₄
+-    ───────────────────────────────────────────────────────────────  ; x ≠ _
+-    let x : A₀ = a₀ let xs₀… in b₀ ↦ let _ : A₁ = a₁ let xs₁… in b₄
++    ───────────────────────────────────────────────────────────────  ; x ≠ `_`
++    let x : A₀ = a₀ let xs₀… in b₀ ↦ let `_` : A₁ = a₁ let xs₁… in b₄
+ 
+ 
+     a₀ ↦ a₁
+     let xs₀… in b₀ ↦ let xs₁… in b₁
+     ─────────────────────────────────────────────────────
+-    let _ = a₀ let xs₀… in b₀ ↦ let _ = a₁ let xs₁… in b₁
++    let `_` = a₀ let xs₀… in b₀ ↦ let `_` = a₁ let xs₁… in b₁
+ 
+ 
+     a₀ ↦ a₁
+-    ↑(1, _, 0, b₀) = b₁
+-    b₁[x ≔ _] = b₂
++    ↑(1, `_`, 0, b₀) = b₁
++    b₁[x ≔ `_`] = b₂
+     ↑(-1, x, 0, b₂) = b₃
+     let xs₀… in b₃ ↦ let xs₁… in b₄
+-    ─────────────────────────────────────────────────────  ; x ≠ _
+-    let x = a₀ let xs₀… in b₀ ↦ let _ = a₁ let xs₁… in b₄
++    ─────────────────────────────────────────────────────  ; x ≠ `_`
++    let x = a₀ let xs₀… in b₀ ↦ let `_` = a₁ let xs₁… in b₄
+ 
+ 
+ ### Variables
+@@ -2490,11 +2493,11 @@
+ 
+ Or in other words:
+ 
+-
+-    f ⇥ Text/show   a ⇥ "…\n…\$…\\…\"…\u0000…"
+-    ──────────────────────────────────────────
+-    f a ⇥ "\"…\\n…\\u0024…\\\\…\\\"…\\u0000…\""
+-
++```
++f ⇥ Text/show   a ⇥ "…\n…\$…\\…\"…\u0000…"
++──────────────────────────────────────────
++f a ⇥ "\"…\\n…\\u0024…\\\\…\\\"…\\u0000…\""
++```
+ 
+ Otherwise, in isolation `Text/show` is in normal form:
+ 
+@@ -2605,8 +2608,8 @@
+     ls₀ ⇥ [ ls₁… ]
+     rs₀ ⇥ [ rs₁… ]
+     [ ls₁… ] # [ rs₁… ] ⇥ t
+-    ───────────────────────   ;  "[ ls₁… ] # [ rs₁… ]" means "use machine
+-    ls₀ # rs₀ ⇥ t             ;  concatenation"
++    ───────────────────────  ;  "[ ls₁… ] # [ rs₁… ]" means "use machine
++    ls₀ # rs₀ ⇥ t            ;  concatenation"
+ 
+ 
+ Also, simplify the "list concatenation" operator if either argument normalizes
+@@ -2627,7 +2630,7 @@
+ 
+ 
+     ls₀ ⇥ ls₁   rs₀ ⇥ rs₁
+-    ─────────────────────   ; If no other rule matches
++    ─────────────────────  ; If no other rule matches
+     ls₀ # rs₀ ⇥ ls₁ # rs₁
+ 
+ 
+@@ -2665,22 +2668,22 @@
+     f as ⇥ None A₀
+ 
+ 
+-    f ⇥ List/last A₀   as ⇥ [ …, a ]
+-    ────────────────────────────────
+-    f as ⇥ Some a
++;    f ⇥ List/last A₀   as ⇥ [ …, a ]
++;    ────────────────────────────────
++;    f as ⇥ Some a
+ 
+ 
+ `List/indexed` tags each element of the list with the element's index:
+ 
+ 
+     f ⇥ List/indexed A₀   as ⇥ [] : List A₁
+-    ───────────────────────────────────────────────
+-    f as ⇥ [] : List { index : Natural, value : A₀ }
++    ────────────────────────────────────────────────────
++    f as ⇥ [] : List { `index` : Natural, `value` : A₀ }
+ 
+ 
+-    f ⇥ List/indexed A₀   as ⇥ [ a₀, a₁, …, ]
+-    ──────────────────────────────────────────────────────────────────
+-    f as ⇥ [ { index = 0, value = a₀ }, { index = 1, value = a₁ }, … ]
++;    f ⇥ List/indexed A₀   as ⇥ [ a₀, a₁, …, ]
++;    ──────────────────────────────────────────────────────────────────────────
++;    f as ⇥ [ { `index` = 0, `value` = a₀ }, { `index` = 1, `value` = a₁ }, … ]
+ 
+ 
+ `List/reverse` reverses the elements of the list:
+@@ -2691,9 +2694,9 @@
+     f as ⇥ [] : List A₁
+ 
+ 
+-    f ⇥ List/reverse A₀   as ⇥ [ a₀, a₁, … ]
+-    ────────────────────────────────────────
+-    f as ⇥ [ …, a₁, a₀ ]
++;    f ⇥ List/reverse A₀   as ⇥ [ a₀, a₁, … ]
++;    ────────────────────────────────────────
++;    f as ⇥ [ …, a₁, a₀ ]
+ 
+ 
+ All of the built-in functions on `List`s are in normal form:
+@@ -2892,7 +2895,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ∧ r₀ ⇥ l₁ ∧ r₁
+ 
+ 
+@@ -2927,7 +2930,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ⫽ r₀ ⇥ l₁ ⫽ r₁
+ 
+ 
+@@ -2963,7 +2966,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ⩓ r₀ ⇥ l₁ ⩓ r₁
+ 
+ 
+@@ -3761,8 +3764,8 @@
+     Γ ⊢ List/last : ∀(a : Type) → List a → Optional a
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────
+-    Γ ⊢ List/indexed : ∀(a : Type) → List a → List { index : Natural, value : a }
++    ─────────────────────────────────────────────────────────────────────────────────
++    Γ ⊢ List/indexed : ∀(a : Type) → List a → List { `index` : Natural, `value` : a }
+ 
+ 
+     ────────────────────────────────────────────────
+@@ -4323,9 +4326,9 @@
+ A constructor field can only be selected from a union if it is present:
+ 
+ 
+-    Γ ⊢ u : c   u ⇥ < x₀ : T₀ | x₁ : T₁ | xs… >
++    Γ ⊢ u : c   u ⇥ < x₀ : T₀ | xs… >
+     ───────────────────────────────────────────────────
+-    Γ ⊢ u.x₀ : ∀(x₀ : T₀) → < x₀ : T₀ | x₁ : T₁ | xs… >
++    Γ ⊢ u.x₀ : ∀(x₀ : T₀) → < x₀ : T₀ | xs… >
+ 
+ 
+ ### `Integer`
+@@ -4532,6 +4535,8 @@
+ If the inferred type of the annotated expression does not match the type
+ annotation then that is a type error.
+ 
++!stop
++
+ ### Imports
+ 
+ An expression with unresolved imports cannot be type-checked
