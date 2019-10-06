@@ -53,9 +53,9 @@ productions:
     - ["λ", "(", var_or_label, _, ":", _, expr0, ")", _, "→", _, expr1]
     - ["∀", "(", var_or_label, _, ":", _, expr0, ")", _, "→", _, expr1]
 
-    - ["[", "]", _, ":", _, "List", _, expr1]
-    - ["[", "]", _, ":", _, "Optional", _, expr1]
-    - ["[", _, var, _, "]", _, ":", _, "Optional", _, var]
+    - ["[", "]", _, ":", _, expr1]
+    #- ["[", "]", _, ":", _, "Optional", _, expr1]
+    #- ["[", _, var, _, "]", _, ":", _, "Optional", _, var]
 
     - [expr2, _, binop0, _, expr2]
     - [expr2]
@@ -64,6 +64,9 @@ productions:
     - [expr2, _, expr3]  # application
     - [merge, _, expr3, _, expr3, _, ":", _, var]
     - [merge, _, expr3, _, expr3]
+    - [toMap, _, expr3, _, ":", _, expr3]
+    - [toMap, _, expr3]
+    - [assert, _, ":", _, expr3]
     - [expr3, _, ":", _, expr3]
     - ["[", _, var, _, "]"]
     - [expr3]
@@ -84,6 +87,7 @@ productions:
     - [expr3, _, binop2, _, var]
 
     - [expr3, ".", var]
+    - [expr3, ".", "(", var, ")"]
     - [var, ".", "{", "}"]
     - [expr3, ".", "{", _, var, _, "}"]
     - [expr3, ".", "{", _, var*, _, "}"]
@@ -103,8 +107,10 @@ productions:
     - ['"', var_string, var_string, '"']
     - ['"', var_string*, '"']  # string literal with induction
     - ['"', var_string, var_string, var_string*, '"']
+    - ['"', "$", "{", var, "}", var_string*, '"']  # string interpolation
     - ['"', var_string, "$", "{", var, "}", var_string*, '"']  # string interpolation
     - ['"', var_string, var_string, "$", "{", var, "}", var_string*, var_string*, '"']  # string interpolation
+    - ['"', "$", "{", var, "}", "$", "{", var, "}", '"']  # string double interpolation
 
     - ["{", "}"]  # empty record type
     - ["{", _, record_type_fields, var_or_label, _, ":", _, expr0, _, "}"]
@@ -160,6 +166,7 @@ productions:
     - [odd]
     - [toInteger]
     - [show]
+    - [subtract]
   list_builtin:
     - [build]
     - [fold]
@@ -171,8 +178,8 @@ productions:
   binop0:
     - ["#"]
   binop1:
-    #- ["#"]
     - ["+"]
+    - ["-"]
     - ["*"]
     - ["∧"]
     - ["⫽"]
@@ -183,6 +190,7 @@ productions:
     - ["&&"]
     - ["=="]
     - ["!="]
+    - ["==="]
     - ["?"]
 
   record_type_fields:
@@ -220,6 +228,7 @@ productions:
   var:
     - [value_var]
     - [type_letter_with_maybe_index]
+    - [discard_var]
   value_var:
     - [var_letter_with_maybe_index]
     # special vars
@@ -251,8 +260,9 @@ terminals:
   #nl: [regexp, "\n| *;[^\n]*\n"]
   #comment: [regexp, " *;[^\n]*"]
   not_a_newline: [regexp, "[^\n]+"]
-  var_letter_with_maybe_index: [regexp, "[abcefgiklortuvxy]s?[₀-₉]*"]
+  var_letter_with_maybe_index: [regexp, "[abcefgiklorstuvxy]s?[₀-₉]*"]
   type_letter_with_maybe_index: [regexp, "[ABTLR][₀-₉]*"]
+  discard_var: [string, _]
   _var_string: [regexp, "s[₀-₉]*"]
   context_var: [regexp, "Γ[₀-₉]*"]
   field: [regexp, "[a-z]+"]
@@ -358,3 +368,7 @@ string_terminals:
   - "1"
   - "-"
   - "d"
+  - "toMap"
+  - "==="
+  - "assert"
+  - "subtract"

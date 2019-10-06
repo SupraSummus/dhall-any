@@ -134,9 +134,9 @@ actions = {
         expression_factory('if_then_else', [2, 6, 10]),
         expression_factory('lambda', [2, 6, 11]),
         expression_factory('forall', [2, 6, 11]),
-        expression_factory('nil', [7]),
-        expression_factory('nothing', [7]),
-        expression_factory('just', [2, 10]),
+        expression_factory('nil', [5]),
+        #expression_factory('nothing', [7]),
+        #expression_factory('just', [2, 10]),
         binop_factory,
         pass_single(0),
     ],
@@ -145,6 +145,9 @@ actions = {
         expression_factory('application', [0, 2]),
         expression_factory('merge_typed', [2, 4, 8]),
         expression_factory('merge', [2, 4]),
+        expression_factory('to_map_typed', [2, 4]),
+        expression_factory('to_map', [2]),
+        expression_factory('assert', [4]),
         expression_factory('type_bound', [0, 4]),
         expression_factory('single_element_list', [2]),  # or just?
         pass_single(0),
@@ -165,6 +168,7 @@ actions = {
         binop_factory,
 
         expression_factory('field_select', [0, 2]),
+        expression_factory('fields_projection_by_type', [0, 3]),
         expression_factory('fields_select_empty', [0]),
         expression_factory('fields_select_single', [0, 4]),
         expression_factory('fields_select_more', [0, 4]),
@@ -186,8 +190,10 @@ actions = {
         complex_term_factory('string_chunk_chunk', [1, 2]),
         complex_term_factory('string_more', [1]),
         complex_term_factory('string_chunk_chunk_more', [1, 2, 3]),
+        complex_term_factory('string_interpolation_more', [3, 5]),
         complex_term_factory('string_chunk_interpolation_more', [1, 4, 6]),
         complex_term_factory('string_chunk_chunk_interpolation_more_more', [1, 2, 5, 7, 8]),
+        complex_term_factory('string_interpolation_interpolation', [3, 7]),
 
         const(ComplexTerm('record_type', [List.from_list([])])),
         lambda _, x: ComplexTerm('record_type', [
@@ -279,6 +285,7 @@ actions = {
         lambda _, x: Name(x[0]),
     ],
     'var': [
+        lambda _, x: Variable(x[0]),
         lambda _, x: Variable(x[0]),
         lambda _, x: Variable(x[0]),
     ],

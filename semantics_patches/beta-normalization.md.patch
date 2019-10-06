@@ -1,0 +1,123 @@
+--- dhall-lang/standard/beta-normalization.md	2019-10-06 17:43:35.878173438 +0200
++++ build/semantics_raw/beta-normalization.md	2019-10-06 18:23:00.481653073 +0200
+@@ -667,9 +667,9 @@
+ Or in other words:
+ 
+ 
+-    f ⇥ Text/show   a ⇥ "…\n…\$…\\…\"…\u0000…"
+-    ─────────────────────────────────────────── ; "…\n…\$…\\…\"…\u0000…" contains no interpolations
+-    f a ⇥ "\"…\\n…\\u0024…\\\\…\\\"…\\u0000…\""
++;    f ⇥ Text/show   a ⇥ "…\n…\$…\\…\"…\u0000…"
++;    ─────────────────────────────────────────── ; "…\n…\$…\\…\"…\u0000…" contains no interpolations
++;    f a ⇥ "\"…\\n…\\u0024…\\\\…\\\"…\\u0000…\""
+ 
+ 
+ Otherwise, in isolation `Text/show` is in normal form:
+@@ -750,8 +750,8 @@
+     ls₀ ⇥ [ ls₁… ]
+     rs₀ ⇥ [ rs₁… ]
+     [ ls₁… ] # [ rs₁… ] ⇥ t
+-    ───────────────────────   ;  "[ ls₁… ] # [ rs₁… ]" means "use machine
+-    ls₀ # rs₀ ⇥ t             ;  concatenation"
++    ───────────────────────  ;  "[ ls₁… ] # [ rs₁… ]" means "use machine
++    ls₀ # rs₀ ⇥ t            ;  concatenation"
+ 
+ 
+ Also, simplify the "list concatenation" operator if either argument normalizes
+@@ -772,7 +772,7 @@
+ 
+ 
+     ls₀ ⇥ ls₁   rs₀ ⇥ rs₁
+-    ─────────────────────   ; If no other rule matches
++    ─────────────────────  ; If no other rule matches
+     ls₀ # rs₀ ⇥ ls₁ # rs₁
+ 
+ 
+@@ -810,9 +810,9 @@
+     f as ⇥ None A₀
+ 
+ 
+-    f ⇥ List/last A₀   as ⇥ [ …, a ]
+-    ────────────────────────────────
+-    f as ⇥ Some a
++;    f ⇥ List/last A₀   as ⇥ [ …, a ]
++;    ────────────────────────────────
++;    f as ⇥ Some a
+ 
+ 
+ `List/indexed` tags each element of the list with the element's index:
+@@ -820,12 +820,12 @@
+ 
+     f ⇥ List/indexed A₀   as ⇥ [] : A₁
+     ───────────────────────────────────────────────
+-    f as ⇥ [] : List { index : Natural, value : A₀ }
++    f as ⇥ [] : List { `index` : Natural, `value` : A₀ }
+ 
+ 
+-    f ⇥ List/indexed A₀   as ⇥ [ a₀, a₁, …, ]
+-    ──────────────────────────────────────────────────────────────────
+-    f as ⇥ [ { index = 0, value = a₀ }, { index = 1, value = a₁ }, … ]
++;    f ⇥ List/indexed A₀   as ⇥ [ a₀, a₁, …, ]
++;    ──────────────────────────────────────────────────────────────────
++;    f as ⇥ [ { index = 0, value = a₀ }, { index = 1, value = a₁ }, … ]
+ 
+ 
+ `List/reverse` reverses the elements of the list:
+@@ -836,9 +836,9 @@
+     f as ⇥ [] : A₁
+ 
+ 
+-    f ⇥ List/reverse A₀   as ⇥ [ a₀, a₁, … ]
+-    ────────────────────────────────────────
+-    f as ⇥ [ …, a₁, a₀ ]
++;    f ⇥ List/reverse A₀   as ⇥ [ a₀, a₁, … ]
++;    ────────────────────────────────────────
++;    f as ⇥ [ …, a₁, a₀ ]
+ 
+ 
+ All of the built-in functions on `List`s are in normal form:
+@@ -988,7 +988,7 @@
+ 
+ 
+     t₀ ⇥ { xs… } ⫽ t₁   t₁.x ⇥ v
+-    ──────────────────────────── ; x ∉ xs
++    ────────────────────────────  ; x ∉ xs
+     t₀.x ⇥ v
+ 
+ 
+@@ -998,7 +998,7 @@
+ 
+ 
+     t₀ ⇥ t₁ ⫽ { xs… }   t₁.x ⇥ v
+-    ──────────────────────────── ; x ∉ xs
++    ────────────────────────────  ; x ∉ xs
+     t₀.x ⇥ v
+ 
+ 
+@@ -1012,7 +1012,7 @@
+ 
+ 
+     t₀ ⇥ { xs… } ∧ t₁   t₁.x ⇥ v
+-    ──────────────────────────── ; x ∉ xs
++    ────────────────────────────  ; x ∉ xs
+     t₀.x ⇥ v
+ 
+ 
+@@ -1022,7 +1022,7 @@
+ 
+ 
+     t₀ ⇥ t₁ ∧ { xs… }   t₁.x ⇥ v
+-    ──────────────────────────── ; x ∉ xs
++    ────────────────────────────  ; x ∉ xs
+     t₀.x ⇥ v
+ 
+ 
+@@ -1064,7 +1064,7 @@
+     t₀ ⇥ l ⫽ { rs… }
+     keys(rs…) = ks…
+     l.{ xs… \ ks… } ⫽ { rs… }.{ xs… ∩ ks… } ⇥ t₁
+-    ──────────────────────────────────────────── ; "\" means set difference, "∩" means set intersection
++    ────────────────────────────────────────────  ; "\" means set difference, "∩" means set intersection
+     t₀.{ xs… } ⇥ t₁
+ 
+ 
