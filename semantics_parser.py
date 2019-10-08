@@ -103,6 +103,7 @@ actions = {
         fact_factory('beta_normalized', [0], [4]),
         fact_factory('same', [0, 4], []),
         fact_factory('encoded', [2], [7]),
+        fact_factory('keys', [2], [7]),
         fact_factory('function_check', [0, 4], [8]),
         fact_factory('normalized_inferred_type', [0, 4], [9]),
         fact_factory('inferred_type', [0, 4], [8]),

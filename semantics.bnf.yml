@@ -28,6 +28,7 @@ productions:
     - [expr0, _, "⇥", _, expr0]
     - [expr0, _, "≡", _, expr0]
     - [encode, "(", var, ")", _, "=", _, var]
+    - [keys, "(", var, ")", _, "=", _, var]
     - [expr0, _, "↝", _, expr0, _, ":", _, expr0]
     - [context, _, "⊢", _, expr0, _, ":", "⇥", _, expr0]
     - [context, _, "⊢", _, expr0, _, ":", _, expr0]
@@ -372,3 +373,4 @@ string_terminals:
   - "==="
   - "assert"
   - "subtract"
+  - "keys"

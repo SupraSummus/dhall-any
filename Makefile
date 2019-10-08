@@ -1,4 +1,5 @@
 SEMANTICS_CHUNKS := \
+    README \
     alpha-normalization \
     beta-normalization \
     #binary \

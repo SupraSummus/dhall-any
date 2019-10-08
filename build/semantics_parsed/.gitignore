@@ -1,8 +1,0 @@
-# Ignore all files
-*
-
-# Ignore subdirectories
-*/
-
-# But don't ignore this .gitignore
-!.gitignore

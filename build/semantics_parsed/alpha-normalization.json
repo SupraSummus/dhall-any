@@ -1,0 +1,3458 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "b\u2084"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "_"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2081"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "_"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "b\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2082"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2083"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2083"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2084"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "B\u2081"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "B\u2084"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "_"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2081"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "_"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "B\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "B\u2082"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "B\u2083"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2083"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "B\u2084"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2084"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "_"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2081"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "_"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "b\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2082"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2083"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2083"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2084"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2084"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "_"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2081"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "_"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "b\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2082"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2083"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2083"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "b\u2084"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "u\u2081"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "u\u2081"
+            }
+          ],
+          "name": "merge"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "to_map"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            }
+          ],
+          "name": "to_map"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "nil"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "nil"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "ts\u2080"
+            }
+          ],
+          "name": "list_single_and_more"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "ts\u2081"
+            }
+          ],
+          "name": "list_single_and_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "ts\u2080"
+              }
+            ],
+            "name": "list_more"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts\u2081"
+              }
+            ],
+            "name": "list_more"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "||"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "||"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "+"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "+"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "++"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "++"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "#"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "#"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "&&"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "&&"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "*"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "*"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "=="
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "=="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "!="
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "!="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "==="
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "==="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "f\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "f\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "f\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "xs"
+            }
+          ],
+          "name": "fields_select_more"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "xs"
+            }
+          ],
+          "name": "fields_select_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "assert"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "assert"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "natural"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "string_chunk"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "string_chunk"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "s\u2080"
+            },
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "ss\u2080"
+            }
+          ],
+          "name": "string_chunk_interpolation_more"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "s\u2080"
+            },
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "ss\u2081"
+            }
+          ],
+          "name": "string_chunk_interpolation_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "ss\u2080"
+              }
+            ],
+            "name": "string_more"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ss\u2081"
+              }
+            ],
+            "name": "string_more"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "record_type"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "t\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "t\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "record_type"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "s\u2080"
+            },
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "s\u2081"
+            },
+            {
+              "variable": "t\u2081"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "s\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "s\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "a\u2080"
+            }
+          ],
+          "name": "some"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "a\u2081"
+            }
+          ],
+          "name": "some"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "None"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "None"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/build"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/fold"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/isZero"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/isZero"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/even"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/even"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/odd"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/odd"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/toInteger"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/toInteger"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/show"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/subtract"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural/subtract"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/toDouble"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Integer/toDouble"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/show"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Double/show"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Double/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/build"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/fold"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/length"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/length"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/head"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/head"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/last"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/last"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/indexed"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/indexed"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/reverse"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List/reverse"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional/fold"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Optional/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional/build"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Optional/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Text/show"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Text/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Bool"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Optional"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Double"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Text"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "List"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "True"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "True"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "False"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "False"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  }
+]

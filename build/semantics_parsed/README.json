@@ -1,0 +1,223 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "nil"
+        }
+      ],
+      "name": "context_shifted",
+      "results": [
+        {
+          "name": "nil"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "y"
+                },
+                {
+                  "variable": "T\u2080"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393\u2080"
+            }
+          ],
+          "name": "list"
+        }
+      ],
+      "name": "context_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "y"
+                },
+                {
+                  "variable": "T\u2081"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393\u2081"
+            }
+          ],
+          "name": "list"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "\u0393\u2080"
+          }
+        ],
+        "name": "context_shifted",
+        "results": [
+          {
+            "variable": "\u0393\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "l\u2080"
+        },
+        {
+          "variable": "r\u2080"
+        }
+      ],
+      "name": "same",
+      "results": []
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "x"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "b"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "y"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "b"
+          }
+        ]
+      }
+    ]
+  }
+]
