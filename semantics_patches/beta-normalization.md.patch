@@ -1,5 +1,5 @@
 --- dhall-lang/standard/beta-normalization.md	2019-10-06 17:43:35.878173438 +0200
-+++ build/semantics_raw/beta-normalization.md	2019-10-08 15:10:03.050063018 +0200
++++ build/semantics_raw/beta-normalization.md	2019-10-08 18:48:33.944207530 +0200
 @@ -667,9 +667,9 @@
  Or in other words:
  
@@ -112,12 +112,79 @@
      t₀.x ⇥ v
  
  
-@@ -1064,7 +1064,7 @@
+@@ -1062,9 +1062,9 @@
+ 
+ 
      t₀ ⇥ l ⫽ { rs… }
-     keys(rs…) = ks…
+-    keys(rs…) = ks…
++    keys({ rs… }) = ks…
      l.{ xs… \ ks… } ⫽ { rs… }.{ xs… ∩ ks… } ⇥ t₁
 -    ──────────────────────────────────────────── ; "\" means set difference, "∩" means set intersection
 +    ────────────────────────────────────────────  ; "\" means set difference, "∩" means set intersection
      t₀.{ xs… } ⇥ t₁
  
  
+@@ -1080,9 +1080,9 @@
+ 
+ 
+     s ⇥ { ss… }
+-    keys(s) = s₁
+-    t.{s₁} ⇥ ts₁
+-    ────────────
++    keys(s) = ss₁…
++    t.{ ss₁… } ⇥ ts₁
++    ────────────────
+     t.(s) ⇥ ts₁
+ 
+ 
+@@ -1121,7 +1121,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ∧ r₀ ⇥ l₁ ∧ r₁
+ 
+ 
+@@ -1161,7 +1161,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ⫽ r₀ ⇥ l₁ ⫽ r₁
+ 
+ 
+@@ -1197,7 +1197,7 @@
+ 
+ 
+     l₀ ⇥ l₁   r₀ ⇥ r₁
+-    ─────────────────   ; If no other rule matches
++    ─────────────────  ; If no other rule matches
+     l₀ ⩓ r₀ ⇥ l₁ ⩓ r₁
+ 
+ 
+@@ -1205,17 +1205,17 @@
+ item represents a field. The value "x" below represents the text value of the field name `x`.
+ 
+ 
+-    t ⇥ { x = v, ts… }   toMap { ts } ⇥ m
+-    ──────────────────────────────────────────────
+-    toMap t ⇥ [ {mapKey = "x", mapValue = v} ] # m
++    t ⇥ { x = v, ts… }   toMap { ts… } ⇥ m
++    ──────────────────────────────────────────────────
++    toMap t ⇥ [ { `mapKey` = "x", `mapValue` = v } ] # m
+ 
+ 
+ The `toMap` application can be annotated with a type, and it must be if the record is empty.
+ 
+ 
+-    t ⇥ { x = v, ts… }   toMap { ts } ⇥ m
+-    ───────────────────────────────────────────────────
+-    toMap t : T₀ ⇥ [ {mapKey = "x", mapValue = v} ] # m
++    t ⇥ { x = v, ts… }   toMap { ts… } ⇥ m
++    ───────────────────────────────────────────────────────
++    toMap t : T₀ ⇥ [ { `mapKey` = "x", `mapValue` = v } ] # m
+ 
+ 
+     t ⇥ {=}   T₀ ⇥ T₁

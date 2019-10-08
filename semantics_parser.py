@@ -104,6 +104,7 @@ actions = {
         fact_factory('same', [0, 4], []),
         fact_factory('encoded', [2], [7]),
         fact_factory('keys', [2], [7]),
+        fact_factory('sort', [2], [7]),
         fact_factory('function_check', [0, 4], [8]),
         fact_factory('normalized_inferred_type', [0, 4], [9]),
         fact_factory('inferred_type', [0, 4], [8]),
@@ -150,12 +151,12 @@ actions = {
         expression_factory('to_map', [2]),
         expression_factory('assert', [4]),
         expression_factory('type_bound', [0, 4]),
-        expression_factory('single_element_list', [2]),  # or just?
         pass_single(0),
     ],
     'expr3': [
         pass_single(1),
         pass_single(0),
+        lambda _, x: ComplexTerm('to_string', [Variable(x[1])]),
 
         expression_factory('var', [0, 2]),
         lambda _, x: ComplexTerm('var', [Name(x[0]), Name('zero')]),
@@ -163,6 +164,7 @@ actions = {
         const(Name('zero')),
         const(ComplexTerm('s', [Name('zero')])),
 
+        expression_factory('single_element_list', [2]),
         expression_factory('list_more', [2]),
         expression_factory('list_single_and_more', [2, 5]),
 
@@ -177,8 +179,6 @@ actions = {
 
         complex_term_factory('double', [0]),
         complex_term_factory('double_to_string', [1]),
-        #const_name_factory('double'),
-        #const_name_factory('double_to_string'),
         const_name_factory('natural'),
         const_name_factory('natural_to_integer'),
         const_name_factory('natural_to_text'),
@@ -196,19 +196,20 @@ actions = {
         complex_term_factory('string_chunk_chunk_interpolation_more_more', [1, 2, 5, 7, 8]),
         complex_term_factory('string_interpolation_interpolation', [3, 7]),
 
+        lambda _, x: ComplexTerm('record_type_or_value', [List.from_list([], x[2])]),
         const(ComplexTerm('record_type', [List.from_list([])])),
         lambda _, x: ComplexTerm('record_type', [
-            List.from_list(x[2] + [ComplexTerm('field', [x[3], x[7]])]),
+            List.from_list(x[2]),
         ]),
         lambda _, x: ComplexTerm('record_type', [
-            List.from_list(x[2], x[3]),
+            List.from_list(x[2], x[5]),
         ]),
         const(ComplexTerm('record', [List.from_list([])])),
         lambda _, x: ComplexTerm('record', [
-            List.from_list([ComplexTerm('field', [x[2], x[6]])]),
+            List.from_list(x[2]),
         ]),
         lambda _, x: ComplexTerm('record', [
-            List.from_list([ComplexTerm('field', [x[2], x[6]])], x[9]),
+            List.from_list(x[2], x[5]),
         ]),
 
         const(ComplexTerm('union_type', [List.from_list([])])),
@@ -293,6 +294,8 @@ actions = {
     'var*': [
         lambda _, _2: Variable('_'),
         lambda _, x: Variable(x[0]),
+        complex_term_factory('set_difference', [0, 4]),
+        complex_term_factory('set_intersection', [0, 4]),
     ],
     'var_string': [
         lambda _, x: Variable(x[0]),
@@ -302,12 +305,16 @@ actions = {
     ],
     'var_nat': lambda _, x: Variable(x[0]),
     'record_type_fields': [
-        lambda _, _2: [],
-        lambda _, x: x[0] + [ComplexTerm('field', [x[1], x[5]])],
+        lambda _, x: [ComplexTerm('field', [x[0], x[4]])],
+        lambda _, x: x[0] + [ComplexTerm('field', [x[3], x[7]])],
+    ],
+    'record_value_fields': [
+        lambda _, x: [ComplexTerm('field', [x[0], x[4]])],
+        lambda _, x: x[0] + [ComplexTerm('field', [x[3], x[7]])],
     ],
     'var_or_label': [
         pass_single(0),
-        lambda _, x: Name(x[0]),
+        lambda _, x: Name(x[0][1:-1]),
     ]
 }
 

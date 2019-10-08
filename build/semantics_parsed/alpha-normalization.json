@@ -2493,7 +2493,7 @@
                 "variable": "xs\u2080"
               }
             ],
-            "name": "record_type"
+            "name": "record_type_or_value"
           }
         ],
         "name": "apha_normalized",
@@ -2504,7 +2504,7 @@
                 "variable": "xs\u2081"
               }
             ],
-            "name": "record_type"
+            "name": "record_type_or_value"
           }
         ]
       }
@@ -2614,7 +2614,7 @@
                 "variable": "xs\u2080"
               }
             ],
-            "name": "record_type"
+            "name": "record_type_or_value"
           }
         ],
         "name": "apha_normalized",
@@ -2625,7 +2625,7 @@
                 "variable": "xs\u2081"
               }
             ],
-            "name": "record_type"
+            "name": "record_type_or_value"
           }
         ]
       }

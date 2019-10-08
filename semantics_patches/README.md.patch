@@ -1,5 +1,5 @@
 --- dhall-lang/standard/README.md	2019-10-06 15:51:10.604421854 +0200
-+++ build/semantics_raw/README.md	2019-10-08 15:06:23.723382816 +0200
++++ build/semantics_raw/README.md	2019-10-08 18:35:11.174157858 +0200
 @@ -222,11 +222,11 @@
  non-empty list says that to normalize a list you normalize the head of the list
  and then normalize the tail:
@@ -34,8 +34,8 @@
 -    ──────────────────
 -    keys(s) = x, ss₁…
 +;    s ⇥ { x : T, ss… }
-+;    keys(ss…) = ss₁…
-+;    ──────────────────
++;    keys({ ss… }) = ss₁…
++;    ────────────────────
 +;    keys(s) = x, ss₁…
  
  
