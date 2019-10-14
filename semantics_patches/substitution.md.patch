@@ -1,0 +1,36 @@
+--- dhall-lang/standard/substitution.md	2019-10-14 17:04:42.967901045 +0200
++++ build/semantics_raw/substitution.md	2019-10-14 17:24:48.267911180 +0200
+@@ -75,11 +75,11 @@
+ Substitution avoids bound variables by increasing the index when a new bound
+ variable of the same name is in scope, like this:
+ 
+-
+-    …   b₀[x@(1 + n) ≔ e₁] = b₁   …
+-    ───────────────────────────────
+-    …
+-
++```
++…   b₀[x@(1 + n) ≔ e₁] = b₁   …
++───────────────────────────────
++…
++```
+ 
+ Substitution also avoids variable capture, like this:
+ 
+@@ -89,11 +89,11 @@
+ in when *any* new bound variable (not just the variable to substitute) is in
+ scope, like this:
+ 
+-
+-    …   ↑(1, y, 0, e₀) = e₁   …
+-    ───────────────────────────
+-    …
+-
++```
++…   ↑(1, y, 0, e₀) = e₁   …
++───────────────────────────
++…
++```
+ 
+ All of the following rules cover expressions that can bind variables:
+ 

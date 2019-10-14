@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 parglare = {file = "https://github.com/igordejanovic/parglare/archive/cdc3e2786bdf991064d4462c0b35d4151ea0d6e5.zip"}
 pyyaml = "*"
+prettyprinter = "*"
 
 [dev-packages]
 

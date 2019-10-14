@@ -2,11 +2,8 @@ SEMANTICS_CHUNKS := \
     README \
     alpha-normalization \
     beta-normalization \
-    #binary \
-    #function-check \
-    #shift \
-    #substitution \
-    #type-inference \
+    shift \
+    substitution \
 
 SEMANTICS_RAW_DIR = dhall-lang/standard/
 SEMANTICS_PATCH_DIR = semantics_patches/

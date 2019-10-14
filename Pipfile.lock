@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d9d00736a90ba6a331ebb9a3696591fff2bec0bd71fe880abb4c9719f1f217d2"
+            "sha256": "ab327835bd1aca135d280301a0159a94f43393918e54e5d39cfe6f603d8a2616"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,8 +16,30 @@
         ]
     },
     "default": {
+        "colorful": {
+            "hashes": [
+                "sha256:86848ad4e2eda60cd2519d8698945d22f6f6551e23e95f3f14dfbb60997807ea",
+                "sha256:8d264b52a39aae4c0ba3e2a46afbaec81b0559a99be0d2cfe2aba4cf94531348"
+            ],
+            "version": "==0.5.4"
+        },
         "parglare": {
             "file": "https://github.com/igordejanovic/parglare/archive/cdc3e2786bdf991064d4462c0b35d4151ea0d6e5.zip"
+        },
+        "prettyprinter": {
+            "hashes": [
+                "sha256:358a58f276cb312e3ca29d7a7f244c91e4e0bda7848249d30e4f36d2eb58b67c",
+                "sha256:9fe5da7ec53510881dd35d7a5c677ba45f34cfe6a8e78d1abd20652cf82139a8"
+            ],
+            "index": "pypi",
+            "version": "==0.18.0"
+        },
+        "pygments": {
+            "hashes": [
+                "sha256:71e430bc85c88a430f000ac1d9b331d2407f681d6f6aec95e8bcfbc3df5b0127",
+                "sha256:881c4c157e45f30af185c1ffe8d549d48ac9127433f2c380c24b84572ad66297"
+            ],
+            "version": "==2.4.2"
         },
         "pyyaml": {
             "hashes": [

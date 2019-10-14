@@ -1,0 +1,4825 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "children": [
+              {
+                "variable": "m"
+              }
+            ],
+            "name": "s"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "B\u2081"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "children": [
+              {
+                "variable": "m"
+              }
+            ],
+            "name": "s"
+          },
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "B\u2081"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "children": [
+              {
+                "variable": "m"
+              }
+            ],
+            "name": "s"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "children": [
+              {
+                "variable": "m"
+              }
+            ],
+            "name": "s"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "y"
+            },
+            {
+              "variable": "a\u2081"
+            },
+            {
+              "variable": "b\u2081"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "absolute_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "absolute_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "relative_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "relative_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "relative_up_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "relative_up_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "home_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "home_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "http_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "http_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "env_import"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "env_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "u\u2081"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "u\u2081"
+            }
+          ],
+          "name": "merge"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "to_map"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            }
+          ],
+          "name": "to_map"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "nil"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "nil"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "ts\u2080"
+            }
+          ],
+          "name": "list_single_and_more"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "ts\u2081"
+            }
+          ],
+          "name": "list_single_and_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts\u2080"
+              }
+            ],
+            "name": "list_more"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts\u2081"
+              }
+            ],
+            "name": "list_more"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "||"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "||"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "+"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "+"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "++"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "++"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "#"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "#"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "&&"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "&&"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "*"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "*"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "=="
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "=="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "!="
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "!="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "?"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "?"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "==="
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "==="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "f\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "f\u2081"
+            },
+            {
+              "variable": "a\u2081"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "f\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "f\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "xs"
+            }
+          ],
+          "name": "fields_select_more"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "xs"
+            }
+          ],
+          "name": "fields_select_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "assert"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "assert"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "natural"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "string_chunk"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "string_chunk"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "s\u2080"
+            },
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "ss\u2080"
+            }
+          ],
+          "name": "string_chunk_interpolation_more"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "s\u2080"
+            },
+            {
+              "variable": "t\u2081"
+            },
+            {
+              "variable": "ss\u2081"
+            }
+          ],
+          "name": "string_chunk_interpolation_more"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "ss\u2080"
+              }
+            ],
+            "name": "string_more"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ss\u2081"
+              }
+            ],
+            "name": "string_more"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "T\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "T\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "t\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "t\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "T\u2080"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    },
+                    {
+                      "variable": "T\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "xs\u2080"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x\u2080"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "xs\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs\u2080"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "xs\u2081"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "a\u2080"
+            }
+          ],
+          "name": "some"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "a\u2081"
+            }
+          ],
+          "name": "some"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "None"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "None"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/build"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/fold"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/isZero"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/isZero"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/even"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/even"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/odd"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/odd"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/toInteger"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/toInteger"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/subtract"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/subtract"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural/show"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Integer/toDouble"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Integer/toDouble"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Integer/show"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Double/show"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Double/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/build"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/fold"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/length"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/length"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/head"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/head"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/last"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/last"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/indexed"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/indexed"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List/reverse"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List/reverse"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Optional/fold"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Optional/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Optional/build"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Optional/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Text/show"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Text/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Bool"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Optional"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Optional"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Natural"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Integer"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Double"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Text"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "List"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "List"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "True"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "True"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "False"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "False"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Sort"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  }
+]
