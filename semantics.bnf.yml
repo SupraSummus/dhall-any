@@ -34,6 +34,7 @@ productions:
     - [context, _, "⊢", _, expr0, _, ":", "⇥", _, expr0]
     - [context, _, "⊢", _, expr0, _, ":", _, expr0]
     - [expr0, _, ":", "⇥", _, expr0]
+    - [expr0, _, "⋁", _, expr0, _, "=", _, expr0]
   context:
     - [ε]
     - [context_var]
@@ -89,7 +90,7 @@ productions:
     - [expr3, _, binop2, _, var]
 
     - [expr3, ".", var]
-    - [expr3, ".", "(", var, ")"]
+    - [expr3, ".", "(", expr0, ")"]
     - [var, ".", "{", "}"]
     - [expr3, ".", "{", _, var, _, "}"]
     - [expr3, ".", "{", _, var*, _, "}"]
@@ -124,6 +125,7 @@ productions:
 
     - ["<", ">"]
     - ["<", _, var*, _, ">"]
+    - ["<", _, var, _, ":", _, var, _, ">"]
     - ["<", _, var, _, ":", _, var, _, "|", _, var*, _, ">"]
     - ["<", _, var, _, "|", _, var*, _, ">"]
     - ["<", _, var, _, "=", _, var, _, ">"]
@@ -269,7 +271,7 @@ terminals:
   #comment: [regexp, " *;[^\n]*"]
   not_a_newline: [regexp, "[^\n]+"]
   var_letter_with_maybe_index: [regexp, "[abcefgiklorstuvxy]s?[₀-₉]*"]
-  type_letter_with_maybe_index: [regexp, "[ABTLR][₀-₉]*"]
+  type_letter_with_maybe_index: [regexp, "[ABTLRU][₀-₉]*"]
   discard_var: [string, _]
   _var_string: [regexp, "s[₀-₉]*"]
   context_var: [regexp, "Γ[₀-₉]*"]
@@ -385,3 +387,4 @@ string_terminals:
   - "∩"
   - "sort"
   - "x"
+  - "⋁"

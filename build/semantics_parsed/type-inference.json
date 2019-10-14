@@ -1,0 +1,7150 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "x"
+                },
+                {
+                  "variable": "T"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393"
+            }
+          ],
+          "name": "list"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "name": "zero"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "k"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "x"
+                },
+                {
+                  "variable": "T"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393"
+            }
+          ],
+          "name": "list"
+        },
+        {
+          "variable": "x"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "k"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "x"
+                },
+                {
+                  "variable": "A"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393"
+            }
+          ],
+          "name": "list"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "children": [
+                {
+                  "variable": "n"
+                }
+              ],
+              "name": "s"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "x"
+              },
+              {
+                "variable": "n"
+              }
+            ],
+            "name": "var"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "variable": "y"
+                },
+                {
+                  "variable": "A"
+                }
+              ],
+              "name": "field"
+            },
+            {
+              "variable": "\u0393"
+            }
+          ],
+          "name": "list"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "x"
+              },
+              {
+                "variable": "n"
+              }
+            ],
+            "name": "var"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Bool"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "True"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "False"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "L"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "L"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "R"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "L"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "R"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "L"
+          },
+          {
+            "variable": "R"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "||"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "&&"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "=="
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "!="
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Bool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "natural"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "+"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Natural"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Natural"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "*"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Natural"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Natural"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/build"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "natural"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "succ"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "_"
+                        },
+                        {
+                          "variable": "natural"
+                        },
+                        {
+                          "variable": "natural"
+                        }
+                      ],
+                      "name": "forall"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "zero"
+                        },
+                        {
+                          "variable": "natural"
+                        },
+                        {
+                          "variable": "natural"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "name": "Natural"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/fold"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "children": [
+                {
+                  "variable": "natural"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "succ"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "_"
+                        },
+                        {
+                          "variable": "natural"
+                        },
+                        {
+                          "variable": "natural"
+                        }
+                      ],
+                      "name": "forall"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "zero"
+                        },
+                        {
+                          "variable": "natural"
+                        },
+                        {
+                          "variable": "natural"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/isZero"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "name": "Bool"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/even"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "name": "Bool"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/odd"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "name": "Bool"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/toInteger"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "name": "Integer"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/show"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Natural"
+            },
+            {
+              "name": "Text"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Natural/subtract"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "name": "_"
+                },
+                {
+                  "name": "Natural"
+                },
+                {
+                  "name": "Natural"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "name": "Natural"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Text"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "string_chunk"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "s"
+            },
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "ss"
+            }
+          ],
+          "name": "string_chunk_interpolation_more"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Text"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ss"
+              }
+            ],
+            "name": "string_more"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Text/show"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Text"
+            },
+            {
+              "name": "Text"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "++"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Text"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Type"
+            },
+            {
+              "name": "Type"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "nil"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "List"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "variable": "T\u2081"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "ts"
+            }
+          ],
+          "name": "list_single_and_more"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "List"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "list_more"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "variable": "T\u2081"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "#"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "List"
+            },
+            {
+              "variable": "A\u2080"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "variable": "A\u2080"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "variable": "A\u2081"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/build"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "list"
+                    },
+                    {
+                      "name": "Type"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "cons"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "_"
+                            },
+                            {
+                              "children": [
+                                {
+                                  "name": "_"
+                                },
+                                {
+                                  "variable": "a"
+                                },
+                                {
+                                  "variable": "list"
+                                }
+                              ],
+                              "name": "forall"
+                            },
+                            {
+                              "variable": "list"
+                            }
+                          ],
+                          "name": "forall"
+                        },
+                        {
+                          "children": [
+                            {
+                              "variable": "nil"
+                            },
+                            {
+                              "variable": "list"
+                            },
+                            {
+                              "variable": "list"
+                            }
+                          ],
+                          "name": "forall"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "List"
+                },
+                {
+                  "variable": "a"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/fold"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "variable": "list"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "cons"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "_"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "_"
+                            },
+                            {
+                              "variable": "a"
+                            },
+                            {
+                              "variable": "list"
+                            }
+                          ],
+                          "name": "forall"
+                        },
+                        {
+                          "variable": "list"
+                        }
+                      ],
+                      "name": "forall"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "nil"
+                        },
+                        {
+                          "variable": "list"
+                        },
+                        {
+                          "variable": "list"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/length"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "name": "Natural"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/head"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "Optional"
+                },
+                {
+                  "variable": "a"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/last"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "Optional"
+                },
+                {
+                  "variable": "a"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/indexed"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "List"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "index"
+                            },
+                            {
+                              "name": "Natural"
+                            }
+                          ],
+                          "name": "field"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "name": "value"
+                                },
+                                {
+                                  "variable": "a"
+                                }
+                              ],
+                              "name": "field"
+                            },
+                            {
+                              "name": "nil"
+                            }
+                          ],
+                          "name": "list"
+                        }
+                      ],
+                      "name": "list"
+                    }
+                  ],
+                  "name": "record_type"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "List/reverse"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "List"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "List"
+                },
+                {
+                  "variable": "a"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Optional"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Type"
+            },
+            {
+              "name": "Type"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "some"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "Optional"
+            },
+            {
+              "variable": "A"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "A"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "None"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "A"
+            },
+            {
+              "name": "Type"
+            },
+            {
+              "children": [
+                {
+                  "name": "Optional"
+                },
+                {
+                  "variable": "A"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Optional/fold"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "name": "Optional"
+                    },
+                    {
+                      "variable": "a"
+                    }
+                  ],
+                  "name": "application"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "variable": "optional"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "just"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "_"
+                        },
+                        {
+                          "variable": "a"
+                        },
+                        {
+                          "variable": "optional"
+                        }
+                      ],
+                      "name": "forall"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "nothing"
+                        },
+                        {
+                          "variable": "optional"
+                        },
+                        {
+                          "variable": "optional"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Optional/build"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "children": [
+                {
+                  "variable": "a"
+                },
+                {
+                  "name": "Type"
+                },
+                {
+                  "children": [
+                    {
+                      "variable": "optional"
+                    },
+                    {
+                      "name": "Type"
+                    },
+                    {
+                      "children": [
+                        {
+                          "variable": "just"
+                        },
+                        {
+                          "children": [
+                            {
+                              "name": "_"
+                            },
+                            {
+                              "variable": "a"
+                            },
+                            {
+                              "variable": "optional"
+                            }
+                          ],
+                          "name": "forall"
+                        },
+                        {
+                          "children": [
+                            {
+                              "variable": "nothing"
+                            },
+                            {
+                              "variable": "optional"
+                            },
+                            {
+                              "variable": "optional"
+                            }
+                          ],
+                          "name": "forall"
+                        }
+                      ],
+                      "name": "forall"
+                    }
+                  ],
+                  "name": "forall"
+                }
+              ],
+              "name": "forall"
+            },
+            {
+              "children": [
+                {
+                  "name": "Optional"
+                },
+                {
+                  "variable": "a"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "t\u2082"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          },
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "least_upper_bound",
+        "results": [
+          {
+            "variable": "t\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "t"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "xs"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "xs"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "i"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "xs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            }
+          ],
+          "name": "fields_select_empty"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "xs"
+            }
+          ],
+          "name": "fields_select_single_and_single"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts\u2081"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts\u2080"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "e"
+              },
+              {
+                "variable": "xs"
+              }
+            ],
+            "name": "fields_select_more"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts\u2081"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "s"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "s"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            {
+              "variable": "s"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ss"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T\u2080"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "s"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "s"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T\u2081"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ss"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "e"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "ss"
+                  }
+                ],
+                "name": "record_type_or_value"
+              }
+            ],
+            "name": "fields_projection_by_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "U"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "ls"
+            }
+          ],
+          "name": "record_type_or_value"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ls"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "a"
+                    },
+                    {
+                      "variable": "A"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ls"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "record_type_or_value"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "record_type_or_value"
+              }
+            ],
+            "name": "\u2afd"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "a"
+                    },
+                    {
+                      "variable": "A\u2081"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "record_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A\u2080"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A\u2081"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "record_type_or_value"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "record_type_or_value"
+              }
+            ],
+            "name": "\u2afd"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "t"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ls"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "t\u2082"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ls"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "record_type_or_value"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "record_type_or_value"
+              }
+            ],
+            "name": "\u2a53"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          },
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "least_upper_bound",
+        "results": [
+          {
+            "variable": "t\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "t\u2082"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A\u2080"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "a"
+                      },
+                      {
+                        "variable": "A\u2081"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "A\u2080"
+              },
+              {
+                "variable": "A\u2081"
+              }
+            ],
+            "name": "\u2a53"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "ls"
+                  }
+                ],
+                "name": "record_type_or_value"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "rs"
+                  }
+                ],
+                "name": "record_type_or_value"
+              }
+            ],
+            "name": "\u2a53"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          },
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "least_upper_bound",
+        "results": [
+          {
+            "variable": "t\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "l"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2082"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "l"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "r"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "T\u2080"
+              },
+              {
+                "variable": "T\u2081"
+              }
+            ],
+            "name": "\u2a53"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "i"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "T\u2080"
+              },
+              {
+                "variable": "T\u2081"
+              }
+            ],
+            "name": "\u2a53"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "T\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            }
+          ],
+          "name": "to_map"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "List"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "mapKey"
+                        },
+                        {
+                          "name": "Text"
+                        }
+                      ],
+                      "name": "field"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "mapValue"
+                            },
+                            {
+                              "variable": "T"
+                            }
+                          ],
+                          "name": "field"
+                        },
+                        {
+                          "name": "nil"
+                        }
+                      ],
+                      "name": "list"
+                    }
+                  ],
+                  "name": "list"
+                }
+              ],
+              "name": "record_type"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "xs"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "xs"
+                      }
+                    ],
+                    "name": "record_type_or_value"
+                  },
+                  ":"
+                ],
+                "name": "to_map_typed"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "mapKey"
+                          },
+                          {
+                            "name": "Text"
+                          }
+                        ],
+                        "name": "field"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "name": "mapValue"
+                              },
+                              {
+                                "variable": "T"
+                              }
+                            ],
+                            "name": "field"
+                          },
+                          {
+                            "name": "nil"
+                          }
+                        ],
+                        "name": "list"
+                      }
+                    ],
+                    "name": "list"
+                  }
+                ],
+                "name": "record_type"
+              }
+            ],
+            "name": "application"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "mapKey"
+                          },
+                          {
+                            "name": "Text"
+                          }
+                        ],
+                        "name": "field"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "name": "mapValue"
+                              },
+                              {
+                                "variable": "T"
+                              }
+                            ],
+                            "name": "field"
+                          },
+                          {
+                            "name": "nil"
+                          }
+                        ],
+                        "name": "list"
+                      }
+                    ],
+                    "name": "list"
+                  }
+                ],
+                "name": "record_type"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "List"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "mapKey"
+                        },
+                        {
+                          "name": "Text"
+                        }
+                      ],
+                      "name": "field"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "name": "mapValue"
+                            },
+                            {
+                              "variable": "T\u2081"
+                            }
+                          ],
+                          "name": "field"
+                        },
+                        {
+                          "name": "nil"
+                        }
+                      ],
+                      "name": "list"
+                    }
+                  ],
+                  "name": "list"
+                }
+              ],
+              "name": "record_type"
+            }
+          ],
+          "name": "application"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "List"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "name": "mapKey"
+                          },
+                          {
+                            "name": "Text"
+                          }
+                        ],
+                        "name": "field"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "name": "mapValue"
+                              },
+                              {
+                                "variable": "T\u2081"
+                              }
+                            ],
+                            "name": "field"
+                          },
+                          {
+                            "name": "nil"
+                          }
+                        ],
+                        "name": "list"
+                      }
+                    ],
+                    "name": "list"
+                  }
+                ],
+                "name": "record_type"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "e"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2080"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "e"
+              }
+            ],
+            "name": "to_map"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "name": "nil"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "name": "nil"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Kind"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Kind"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Kind"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "name": "nil"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Sort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    },
+                    {
+                      "variable": "T"
+                    }
+                  ],
+                  "name": "field"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Sort"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Sort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "c"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "union_type"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "u"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "T"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "variable": "x"
+                        },
+                        {
+                          "variable": "T"
+                        }
+                      ],
+                      "name": "field"
+                    },
+                    {
+                      "variable": "ts"
+                    }
+                  ],
+                  "name": "list"
+                }
+              ],
+              "name": "union_type"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      },
+                      {
+                        "variable": "T"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "u"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "variable": "x"
+                    }
+                  ],
+                  "name": "label"
+                },
+                {
+                  "variable": "ts"
+                }
+              ],
+              "name": "list"
+            }
+          ],
+          "name": "union_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "x"
+                      }
+                    ],
+                    "name": "label"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "u"
+            },
+            {
+              "variable": "T"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "nil"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "u"
+            },
+            {
+              "variable": "T\u2081"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2080"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "t"
+              },
+              {
+                "variable": "u"
+              }
+            ],
+            "name": "merge"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2081"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "y"
+                      },
+                      {
+                        "children": [
+                          {
+                            "variable": "x"
+                          },
+                          {
+                            "variable": "A\u2080"
+                          },
+                          {
+                            "variable": "T\u2080"
+                          }
+                        ],
+                        "name": "forall"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "y"
+                      },
+                      {
+                        "variable": "A\u2081"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "us"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "us"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "t\u2081"
+              },
+              {
+                "variable": "u\u2081"
+              },
+              {
+                "variable": "T\u2081"
+              }
+            ],
+            "name": "merge_typed"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2080"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "y"
+                      },
+                      {
+                        "variable": "T\u2080"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "ts"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "y"
+                      }
+                    ],
+                    "name": "label"
+                  },
+                  {
+                    "variable": "us"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "ts"
+              }
+            ],
+            "name": "record_type_or_value"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "u\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "us"
+              }
+            ],
+            "name": "union_type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "variable": "t\u2081"
+              },
+              {
+                "variable": "u\u2081"
+              },
+              {
+                "variable": "T\u2080"
+              }
+            ],
+            "name": "merge_typed"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Integer"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Integer/show"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Integer"
+            },
+            {
+              "name": "Text"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Integer/toDouble"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Integer"
+            },
+            {
+              "name": "Double"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Double"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Double/show"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Double"
+            },
+            {
+              "name": "Text"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393\u2080"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A"
+            },
+            {
+              "variable": "B"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "c"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2080"
+          },
+          {
+            "variable": "A"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "i"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "x"
+                  },
+                  {
+                    "variable": "A"
+                  }
+                ],
+                "name": "field"
+              },
+              {
+                "variable": "\u0393\u2080"
+              }
+            ],
+            "name": "list"
+          }
+        ],
+        "name": "context_shifted",
+        "results": [
+          {
+            "variable": "\u0393\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2081"
+          },
+          {
+            "variable": "B"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "o"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "i"
+          },
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "function_check",
+        "results": [
+          {
+            "variable": "c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393\u2080"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2081"
+            },
+            {
+              "variable": "B"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2080"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "x"
+                  },
+                  {
+                    "variable": "A\u2081"
+                  }
+                ],
+                "name": "field"
+              },
+              {
+                "variable": "\u0393\u2080"
+              }
+            ],
+            "name": "list"
+          }
+        ],
+        "name": "context_shifted",
+        "results": [
+          {
+            "variable": "\u0393\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2081"
+          },
+          {
+            "variable": "b"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "B"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2080"
+          },
+          {
+            "children": [
+              {
+                "variable": "x"
+              },
+              {
+                "variable": "A\u2081"
+              },
+              {
+                "variable": "B"
+              }
+            ],
+            "name": "forall"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "c\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a\u2080"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "B\u2083"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "x"
+              },
+              {
+                "variable": "A\u2080"
+              },
+              {
+                "variable": "B\u2080"
+              }
+            ],
+            "name": "forall"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2080"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2081"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "B\u2081"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "B\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2082"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "B\u2083"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_typed_in"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "B"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "i"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2081"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2082"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2081"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "b\u2082"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "a\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "let_single_in"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "B"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a\u2080"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "a\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2081"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "a\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "a\u2082"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "dec"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "variable": "b\u2081"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "b\u2082"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "b\u2082"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "B"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T\u2081"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "i"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "name": "Sort"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Sort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "T"
+            }
+          ],
+          "name": "assert"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "==="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "x"
+              },
+              {
+                "variable": "y"
+              }
+            ],
+            "name": "==="
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "y"
+            }
+          ],
+          "name": "==="
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "y"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "name": "Type"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          },
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "same",
+        "results": []
+      }
+    ]
+  }
+]

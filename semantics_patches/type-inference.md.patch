@@ -1,0 +1,69 @@
+--- dhall-lang/standard/type-inference.md	2019-10-14 17:04:42.967901045 +0200
++++ build/semantics_raw/type-inference.md	2019-10-14 18:18:22.737938209 +0200
+@@ -298,13 +298,13 @@
+ non-empty) or from the type annotation (if empty):
+ 
+ 
+-    Γ ⊢ T₀ : c   T₀ ⇥ List T₁   T₁ : Type
+-    ─────────────────────────────────────
++    Γ ⊢ T₀ : c   T₀ ⇥ List T₁   Γ ⊢ T₁ : Type
++    ─────────────────────────────────────────
+     Γ ⊢ ([] : T₀) : List T₁
+ 
+ 
+-    Γ ⊢ t : T₀   T₀ : Type   Γ ⊢ [ ts… ] : List T₁   T₀ ≡ T₁
+-    ────────────────────────────────────────────────────────
++    Γ ⊢ t : T₀   Γ ⊢ T₀ : Type   Γ ⊢ [ ts… ] : List T₁   T₀ ≡ T₁
++    ────────────────────────────────────────────────────────────
+     Γ ⊢ [ t, ts… ] : List T₀
+ 
+ 
+@@ -353,8 +353,8 @@
+     Γ ⊢ List/last : ∀(a : Type) → List a → Optional a
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────
+-    Γ ⊢ List/indexed : ∀(a : Type) → List a → List { index : Natural, value : a }
++    ─────────────────────────────────────────────────────────────────────────────────
++    Γ ⊢ List/indexed : ∀(a : Type) → List a → List { `index` : Natural, `value` : a }
+ 
+ 
+     ────────────────────────────────────────────────
+@@ -415,8 +415,8 @@
+ A non-empty record can store terms, types and kinds:
+ 
+ 
+-    Γ ⊢ T : t₀   Γ ⊢ { xs… } : t₁  t₀ ⋁ t₁ = t₂
+-    ───────────────────────────────────────────  ; x ∉ { xs… }
++    Γ ⊢ T : t₀   Γ ⊢ { xs… } : t₁   t₀ ⋁ t₁ = t₂
++    ────────────────────────────────────────────  ; x ∉ { xs… }
+     Γ ⊢ { x : T, xs… } : t₂
+ 
+ 
+@@ -564,19 +564,19 @@
+ 
+ 
+     Γ ⊢ e : { x : T, xs… }
+-    Γ ⊢ ( toMap { xs… } : List { mapKey : Text, mapValue : T } ) : List { mapKey : Text, mapValue : T }
+-    ───────────────────────────────────────────────────────────────────────────────────────────────────
+-    Γ ⊢ toMap e : List { mapKey : Text, mapValue : T }
++    Γ ⊢ (toMap { xs… } : List { `mapKey` : Text, `mapValue` : T }) : List { `mapKey` : Text, `mapValue` : T }
++    ─────────────────────────────────────────────────────────────────────────────────────────────────────────
++    Γ ⊢ toMap e : List { `mapKey` : Text, `mapValue` : T }
+ 
+ 
+-    Γ ⊢ e : {}   Γ ⊢ T₀ : Type   T₀ ⇥ List { mapKey : Text, mapValue : T₁ }
+-    ───────────────────────────────────────────────────────────────────────
+-    Γ ⊢ ( toMap e : T₀ ) : List { mapKey : Text, mapValue : T₁ }
++    Γ ⊢ e : {}   Γ ⊢ T₀ : Type   T₀ ⇥ List { `mapKey` : Text, `mapValue` : T₁ }
++    ───────────────────────────────────────────────────────────────────────────
++    Γ ⊢ (toMap e : T₀) : List { `mapKey` : Text, `mapValue` : T₁ }
+ 
+ 
+     Γ ⊢ toMap e : T₀   T₀ ≡ T₁
+     ──────────────────────────
+-    Γ ⊢ ( toMap e : T₁ ) : T₀
++    Γ ⊢ (toMap e : T₁) : T₀
+ 
+ 
+ ## Unions

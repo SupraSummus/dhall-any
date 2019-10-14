@@ -1,5 +1,5 @@
 --- dhall-lang/standard/beta-normalization.md	2019-10-14 17:04:42.957901045 +0200
-+++ build/semantics_raw/beta-normalization.md	2019-10-14 17:22:17.237909910 +0200
++++ build/semantics_raw/beta-normalization.md	2019-10-14 18:09:15.267933606 +0200
 @@ -667,9 +667,9 @@
  Or in other words:
  

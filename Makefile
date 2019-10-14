@@ -4,6 +4,7 @@ SEMANTICS_CHUNKS := \
     beta-normalization \
     shift \
     substitution \
+    type-inference \
 
 SEMANTICS_RAW_DIR = dhall-lang/standard/
 SEMANTICS_PATCH_DIR = semantics_patches/

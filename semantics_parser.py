@@ -109,6 +109,7 @@ actions = {
         fact_factory('normalized_inferred_type', [0, 4], [9]),
         fact_factory('inferred_type', [0, 4], [8]),
         lambda _, x: Fact('normalized_inferred_type', [List.from_list([]), x[0]], [x[5]]),
+        fact_factory('least_upper_bound', [0, 4], [8]),
     ],
     'context': [
         const(List.from_list([])),
@@ -214,6 +215,9 @@ actions = {
 
         const(ComplexTerm('union_type', [List.from_list([])])),
         lambda _, x: ComplexTerm('union_type', [x[2]]),
+        lambda _, x: ComplexTerm('union_type', [List.from_list([
+            ComplexTerm('field', [x[2], x[6]]),
+        ])]),
         lambda _, x: ComplexTerm('union_type', [List(
             head=ComplexTerm('field', [x[2], x[6]]),
             tail=x[10],
