@@ -1,5 +1,5 @@
 --- dhall-lang/standard/type-inference.md	2019-10-14 17:04:42.967901045 +0200
-+++ build/semantics_raw/type-inference.md	2019-10-14 18:18:22.737938209 +0200
++++ build/semantics_raw/type-inference.md	2019-10-14 18:27:40.247942897 +0200
 @@ -298,13 +298,13 @@
  non-empty) or from the type annotation (if empty):
  

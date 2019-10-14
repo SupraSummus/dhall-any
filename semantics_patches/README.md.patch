@@ -1,5 +1,5 @@
 --- dhall-lang/standard/README.md	2019-10-14 17:04:42.957901045 +0200
-+++ build/semantics_raw/README.md	2019-10-14 18:08:56.297933446 +0200
++++ build/semantics_raw/README.md	2019-10-14 18:26:50.077942475 +0200
 @@ -222,11 +222,11 @@
  non-empty list says that to normalize a list you normalize the head of the list
  and then normalize the tail:

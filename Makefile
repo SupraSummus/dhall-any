@@ -5,6 +5,7 @@ SEMANTICS_CHUNKS := \
     shift \
     substitution \
     type-inference \
+    function-check \
 
 SEMANTICS_RAW_DIR = dhall-lang/standard/
 SEMANTICS_PATCH_DIR = semantics_patches/

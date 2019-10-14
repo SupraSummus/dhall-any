@@ -1,0 +1,228 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "c"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Type"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Kind"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Sort"
+        },
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "c\u2080"
+        },
+        {
+          "variable": "c\u2081"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "variable": "c\u2082"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "c\u2080"
+          },
+          {
+            "variable": "c\u2081"
+          }
+        ],
+        "name": "least_upper_bound",
+        "results": [
+          {
+            "variable": "c\u2082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Kind"
+        },
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Type"
+        },
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Sort"
+        },
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Sort"
+        },
+        {
+          "name": "Sort"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Type"
+        },
+        {
+          "name": "Sort"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Kind"
+        },
+        {
+          "name": "Sort"
+        }
+      ],
+      "name": "function_check",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  }
+]
