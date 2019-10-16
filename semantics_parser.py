@@ -103,6 +103,7 @@ actions = {
         fact_factory('beta_normalized', [0], [4]),
         fact_factory('same', [0, 4], []),
         fact_factory('encoded', [2], [7]),
+        fact_factory('decoded', [2], [7]),
         fact_factory('keys', [2], [7]),
         fact_factory('sort', [2], [7]),
         fact_factory('function_check', [0, 4], [8]),
@@ -268,11 +269,13 @@ actions = {
         builtin,
         builtin,
 
+        const_name_factory('missing_import'),
         const_name_factory('absolute_import'),
         const_name_factory('relative_import'),
         const_name_factory('relative_up_import'),
         const_name_factory('home_import'),
         const_name_factory('http_import'),
+        const_name_factory('http_import_using'),
         const_name_factory('env_import'),
     ],
     'inc_or_dec': [
@@ -291,6 +294,7 @@ actions = {
         lambda _, x: Name(x[0]),
     ],
     'var': [
+        lambda _, x: Variable(x[0]),
         lambda _, x: Variable(x[0]),
         lambda _, x: Variable(x[0]),
         lambda _, x: Variable(x[0]),

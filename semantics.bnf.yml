@@ -27,7 +27,8 @@ productions:
     - [expr0, _, "↦", _, expr0]
     - [expr0, _, "⇥", _, expr0]
     - [expr0, _, "≡", _, expr0]
-    - [encode, "(", var, ")", _, "=", _, var]
+    - [encode, "(", expr0, ")", _, "=", _, cbor0]
+    - [decode, "(", cbor0, ")", _, "=", _, expr0]
     - [keys, "(", expr0, ")", _, "=", _, var*]
     - [sort, "(", var*, ")", _, "=", _, var*]
     - [expr0, _, "↝", _, expr0, _, ":", _, expr0]
@@ -156,11 +157,13 @@ productions:
     - [Sort]
 
     # imports
-    - [path, _, file]
+    - [missing]
+    - [var, _, file]
     - [., _, path, _, file]
     - [".", ".", _, path, _, file]
     - ["~", _, path, _, file]
-    - ["https://authority", _, path, _, file]
+    - [http_or_https, var, _, var, _, file]  # http(s)://authority path file
+    - [http_or_https, var, _, var, _, file, _, using, _, var]  # https://authority path file using headers
     - ["env:x"]
 
   natural_builtin:
@@ -233,10 +236,33 @@ productions:
     - [nat, _, "+", _, "1"]
     - ["(", nat, ")"]
 
+  cbor0:
+    - [var]
+    - [n]
+    - [n, n]
+    - [-, n]
+    - [-, n, n]
+    - [n.n_h]
+    - [n.n_h, "(", hex16, ")"]
+    - [n.n_s]
+    - [n.n]
+    - ["[", _, cbor0_list, cbor0, _, "]"]
+    - ["[", _, cbor0_list, var*, _, "]"]
+    - ['"', cbor_string_literal_content, '"']
+    - [cbor_int_literal]
+    - ["False"]
+    - ["True"]
+    - ["null"]
+    - [CBORTag, _, cbor_int_literal, _, cbor0]
+  cbor0_list:
+    - []
+    - [cbor0, ",", _, cbor0_list]
+
   var:
     - [value_var]
     - [type_letter_with_maybe_index]
     - [discard_var]
+    - [long_var]
   value_var:
     - [var_letter_with_maybe_index]
     # special vars
@@ -267,10 +293,8 @@ productions:
 terminals:
   space: [string, " "]
   nl: [string, "\n"]
-  #nl: [regexp, "\n| *;[^\n]*\n"]
-  #comment: [regexp, " *;[^\n]*"]
   not_a_newline: [regexp, "[^\n]+"]
-  var_letter_with_maybe_index: [regexp, "[abcefgiklorstuvxy]s?[₀-₉]*"]
+  var_letter_with_maybe_index: [regexp, "[abcefghiklorstuvxy]s?[₀-₉]*"]
   type_letter_with_maybe_index: [regexp, "[ABTLRU][₀-₉]*"]
   discard_var: [string, _]
   _var_string: [regexp, "s[₀-₉]*"]
@@ -279,7 +303,11 @@ terminals:
   line: [regexp, "[─]+"]
   var_nat: [regexp, "m|n"]
   quoted_label: [regexp, "`[a-zA-Z_]+`"]
-  #raw_nat: [regexp, "0|([1-9][0-9]*)"]
+  cbor_string_literal_content: [regexp, "[a-zA-Z_\/]+"]
+  cbor_int_literal: [regexp, "[0-9]+"]
+  hex16: [regexp, "0x[a-fA-F0-9]{4}"]
+  long_var: [regexp, "(path|authority|directory|headers|import)[₀-₉]*"]
+  http_or_https: [regexp, "https?:\/\/"]
 
 string_terminals:
   - "!="
@@ -337,7 +365,6 @@ string_terminals:
   - "file"
   - "fold"
   - "head"
-  - "https://authority"
   - "if"
   - "in"
   - "indexed"
@@ -388,3 +415,12 @@ string_terminals:
   - "sort"
   - "x"
   - "⋁"
+  - "n"
+  - "null"
+  - "n.n_s"
+  - "n.n_h"
+  - "n.n"
+  - "using"
+  - "missing"
+  - "decode"
+  - "CBORTag"

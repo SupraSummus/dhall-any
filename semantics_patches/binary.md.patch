@@ -1,0 +1,434 @@
+--- dhall-lang/standard/binary.md	2019-10-14 17:04:42.967901045 +0200
++++ build/semantics_raw/binary.md	2019-10-16 19:14:10.920499724 +0200
+@@ -317,9 +317,9 @@
+ applied to multiple arguments is stored within a single array:
+ 
+ 
+-    encode(f₀) = f₁   encode(a₀) = a₁   encode(b₀) = b₁   …
+-    ───────────────────────────────────────────────────────────────────
+-    encode(f₀ a₀ b₀ …) = [ 0, f₁, a₁, b₁, … ]
++;    encode(f₀) = f₁   encode(a₀) = a₁   encode(b₀) = b₁   …
++;    ───────────────────────────────────────────────────────────────────
++;    encode(f₀ a₀ b₀ …) = [ 0, f₁, a₁, b₁, … ]
+ 
+ 
+ ### Functions
+@@ -448,9 +448,9 @@
+ Non-empty `List`s don't store their type, but do store their elements inline:
+ 
+ 
+-    encode(a₀) = a₁   encode(b₀) = b₁
+-    ──────────────────────────────────────────────────
+-    encode([ a₀, b₀, … ]) = [ 4, null, a₁, b₁, … ]
++;    encode(a₀) = a₁   encode(b₀) = b₁
++;    ──────────────────────────────────────────────────
++;    encode([ a₀, b₀, … ]) = [ 4, null, a₁, b₁, … ]
+ 
+ 
+ ### `Some`
+@@ -500,17 +500,17 @@
+ Dhall record types translate to CBOR maps:
+ 
+ 
+-    encode(T₀) = T₁   …
+-    ──────────────────────────────────────────────────
+-    encode({ x : T₀, … }) = [ 7, { "x" = T₁, … } ]
++;    encode(T₀) = T₁   …
++;    ──────────────────────────────────────────────────
++;    encode({ x : T₀, … }) = [ 7, { "x" = T₁, … } ]
+ 
+ 
+ Dhall record literals translate to CBOR maps:
+ 
+ 
+-    encode(t₀) = t₁   …
+-    ──────────────────────────────────────────────────
+-    encode({ x = t₀, … }) = [ 8, { "x" = t₁, … } ]
++;    encode(t₀) = t₁   …
++;    ──────────────────────────────────────────────────
++;    encode({ x = t₀, … }) = [ 8, { "x" = t₁, … } ]
+ 
+ 
+ Note: the record fields should be sorted before translating them to CBOR maps.
+@@ -519,7 +519,7 @@
+ Field access:
+ 
+ 
+-    encode(t₀) = t₁   …
++    encode(t₀) = t₁
+     ─────────────────────────────────
+     encode(t₀.x) = [ 9, t₁, "x" ]
+ 
+@@ -527,9 +527,9 @@
+ ... is encoded differently than record projection:
+ 
+ 
+-    encode(t₀) = t₁   …
+-    ────────────────────────────────────────────────────
+-    encode(t₀.{ x, y, … }) = [ 10, t₁, "x", "y", … ]
++;    encode(t₀) = t₁   …
++;    ────────────────────────────────────────────────────
++;    encode(t₀.{ x, y, … }) = [ 10, t₁, "x", "y", … ]
+ 
+ 
+ Record projection by type is encoded as follows:
+@@ -545,9 +545,9 @@
+ Dhall union types translate to CBOR maps:
+ 
+ 
+-    encode(T₀) = T₁   …
+-    ────────────────────────────────────────────────────────────────
+-    encode(< x : T₀ | y | … >) = [ 11, { "x" = T₁, "y" = null, … } ]
++;    encode(T₀) = T₁   …
++;    ────────────────────────────────────────────────────────────────
++;    encode(< x : T₀ | y | … >) = [ 11, { "x" = T₁, "y" = null, … } ]
+ 
+ 
+ Union constructors (`U.x`) are encoded according to the rule for record field
+@@ -556,17 +556,17 @@
+ The (now-removed) union literal syntax used to be encoded using a leading 12:
+ 
+ 
+-    encode(t₀) = t₁   encode(T₀) = T₁   …
+-    ──────────────────────────────────────────────────────────────────────────────────  ; OBSOLETE judgment
+-    encode(< x = t₀ | y : T₀ | z | … >) = [ 12, "x", t₁, { "y" = T₁, "z" = null, … } ]
++;    encode(t₀) = t₁   encode(T₀) = T₁   …
++;    ──────────────────────────────────────────────────────────────────────────────────  ; OBSOLETE judgment
++;    encode(< x = t₀ | y : T₀ | z | … >) = [ 12, "x", t₁, { "y" = T₁, "z" = null, … } ]
+ 
+ 
+ The (now-removed) `constructors` keyword used to be encoded using a leading 13:
+ 
+ 
+-    encode(u₀) = u₁
+-    ───────────────────────────────────────  ; OBSOLETE judgment
+-    encode(constructors u₀) = [ 13, u₁]
++;    encode(u₀) = u₁
++;    ───────────────────────────────────────  ; OBSOLETE judgment
++;    encode(constructors u₀) = [ 13, u₁]
+ 
+ 
+ Avoid reusing the numbers 12 and 13 as long as possible until we run out of
+@@ -688,9 +688,9 @@
+ interpolated expressions:
+ 
+ 
+-    encode(b₀) = b₁   encode(d₀) = d₁   …   encode(y₀) = y₁
+-    ───────────────────────────────────────────────────────────────────────────────────
+-    encode("a${b₀}c${d}e…x${y₀}z") = [ 18, "a", b₁, "c", d₁, "e", …, "x", y₁, "z" ]
++;    encode(b₀) = b₁   encode(d₀) = d₁   …   encode(y₀) = y₁
++;    ───────────────────────────────────────────────────────────────────────────────────
++;    encode("a${b₀}c${d}e…x${y₀}z") = [ 18, "a", b₁, "c", d₁, "e", …, "x", y₁, "z" ]
+ 
+ In other words: the amount of encoded elements is always an odd number, with the
+ odd elements being strings and the even ones being interpolated expressions.
+@@ -752,21 +752,21 @@
+ The full rules are:
+ 
+ 
+-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    encode(http://authority/path₀/path₁/…/file?query) = [ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", "query" ]
++;    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    encode(http://authority/path₀/path₁/…/file?query) = [ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", "query" ]
+ 
+ 
+-    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    encode(http://authority/path₀/path₁/…/file) = [ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", null ]
++;    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    encode(http://authority/path₀/path₁/…/file) = [ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", null ]
+ 
+ 
+ 
+-    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    encode(https://authority/path₀/path₁/…/file?query) = [ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", "query" ]
++;    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    encode(https://authority/path₀/path₁/…/file?query) = [ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", "query" ]
+ 
+ 
+-    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    encode(https://authority/path₀/path₁/…/file) = [ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", null ]
++;    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    encode(https://authority/path₀/path₁/…/file) = [ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", null ]
+ 
+ 
+ If you import `using headers`, then the fourth element contains the import
+@@ -788,24 +788,24 @@
+ Absolute file paths are tokenized in the same way:
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────
+-    encode(/path₀/path₁/…/file) = [ 24, null, 0, 2, "path₀", "path₁", …, "file" ]
++;    ─────────────────────────────────────────────────────────────────────────────
++;    encode(/path₀/path₁/…/file) = [ 24, null, 0, 2, "path₀", "path₁", …, "file" ]
+ 
+ 
+ Each path type is treated as another "scheme" (i.e. they are distinguished by
+ the third element):
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────
+-    encode(./path₀/path₁/…/file) = [ 24, null, 0, 3, "path₀", "path₁", …, "file" ]
++;    ──────────────────────────────────────────────────────────────────────────────
++;    encode(./path₀/path₁/…/file) = [ 24, null, 0, 3, "path₀", "path₁", …, "file" ]
+ 
+ 
+-    ───────────────────────────────────────────────────────────────────────────────
+-    encode(../path₀/path₁/…/file) = [ 24, null, 0, 4, "path₀", "path₁", …, "file" ]
++;    ───────────────────────────────────────────────────────────────────────────────
++;    encode(../path₀/path₁/…/file) = [ 24, null, 0, 4, "path₀", "path₁", …, "file" ]
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────
+-    encode(~/path₀/path₁/…/file) = [ 24, null, 0, 5, "path₀", "path₁", …, "file" ]
++;    ──────────────────────────────────────────────────────────────────────────────
++;    encode(~/path₀/path₁/…/file) = [ 24, null, 0, 5, "path₀", "path₁", …, "file" ]
+ 
+ 
+ Environment variables are also treated as another scheme:
+@@ -828,10 +828,10 @@
+ so this rule suffices:
+ 
+ 
+-    encode(import) = [ 24, null, x, xs… ]
+-    base16decode(base16Hash) = rawHash
+-    ─────────────────────────────────────────────────────────────────────────────
+-    encode(import sha256:base16Hash) = [ 24, b"\x12\x20rawHash", x, xs… ]
++;    encode(import) = [ 24, null, x, xs… ]
++;    base16decode(base16Hash) = rawHash
++;    ─────────────────────────────────────────────────────────────────────────────
++;    encode(import sha256:base16Hash) = [ 24, b"\x12\x20rawHash", x, xs… ]
+ 
+ 
+ 
+@@ -839,27 +839,27 @@
+ instead of `0`:
+ 
+ 
+-    encode(import) = [ 24, x, 0, xs… ]
+-    ──────────────────────────────────────────
+-    encode(import as Text) = [ 24, x, 1, xs… ]
++;    encode(import) = [ 24, x, 0, xs… ]
++;    ──────────────────────────────────────────
++;    encode(import as Text) = [ 24, x, 1, xs… ]
+ 
+ 
+ If you import `as Location`, then the third element encoding the import type is `2`
+ instead of `0`:
+ 
+ 
+-    encode(import) = [ 24, x, 0, xs… ]
+-    ──────────────────────────────────────────
+-    encode(import as Location) = [ 24, x, 2, xs… ]
++;    encode(import) = [ 24, x, 0, xs… ]
++;    ──────────────────────────────────────────
++;    encode(import as Location) = [ 24, x, 2, xs… ]
+ 
+ 
+ ### `let` expressions
+ 
+ A `let` binder is represented by a sequence of three elements: name, type annotation (`null` if absent) and bound expression. Adjacent `let` expressions are "flattened" and encoded in a single array, concatenating the immediately nested binders:
+ 
+-    encode(A₀) = A₁   encode(a₀) = a₁   encode(b₀) = b₁   ...   encode(z₀) = z₁
+-    ──────────────────────────────────────────────────────────────────────────────────────────
+-    encode(let x : A₀ = a₀ in let y = b₀ ... in z₀) = [ 25, "x", A₁, a₁, "y", null, b₁, ..., z₁ ]
++;    encode(A₀) = A₁   encode(a₀) = a₁   encode(b₀) = b₁   ...   encode(z₀) = z₁
++;    ──────────────────────────────────────────────────────────────────────────────────────────
++;    encode(let x : A₀ = a₀ in let y = b₀ ... in z₀) = [ 25, "x", A₁, a₁, "y", null, b₁, ..., z₁ ]
+ 
+ 
+ ### Type annotations
+@@ -1070,9 +1070,9 @@
+ element is the function and the remaining elements are the function arguments:
+ 
+ 
+-    decode(f₁) = f₀   decode(a₁) = a₀   decode(b₁) = b₀   …
+-    ───────────────────────────────────────────────────────────────────
+-    decode([ 0, f₁, a₁, b₁, … ]) = f₀ a₀ b₀ …
++;    decode(f₁) = f₀   decode(a₁) = a₀   decode(b₁) = b₀   …
++;    ───────────────────────────────────────────────────────────────────
++;    decode([ 0, f₁, a₁, b₁, … ]) = f₀ a₀ b₀ …
+ 
+ 
+ A decoder MUST require at least 1 function argument.  In other words, a decode
+@@ -1210,9 +1210,9 @@
+ If the list is non-empty then the type MUST be `null`:
+ 
+ 
+-    decode(a₁) = a₀   decode(b₁) = b₀
+-    ──────────────────────────────────────────────────
+-    decode([ 4, null, a₁, b₁, … ]) = [ a₀, b₀, … ]
++;    decode(a₁) = a₀   decode(b₁) = b₀
++;    ──────────────────────────────────────────────────
++;    decode([ 4, null, a₁, b₁, … ]) = [ a₀, b₀, … ]
+ 
+ 
+ ### `Some`
+@@ -1260,33 +1260,33 @@
+ Decode a CBOR array beginning with a `7` as a record type:
+ 
+ 
+-    decode(T₁) = T₀   …
+-    ──────────────────────────────────────────────────
+-    decode([ 7, { "x" = T₁, … } ]) = { x : T₀, … }
++;    decode(T₁) = T₀   …
++;    ──────────────────────────────────────────────────
++;    decode([ 7, { "x" = T₁, … } ]) = { x : T₀, … }
+ 
+ 
+ Decode a CBOR array beginning with a `8` as a record literal:
+ 
+ 
+-    decode(t₁) = t₀   …
+-    ──────────────────────────────────────────────────
+-    decode([ 8, { "x" = t₁, … } ]) = { x = t₀, … }
++;    decode(t₁) = t₀   …
++;    ──────────────────────────────────────────────────
++;    decode([ 8, { "x" = t₁, … } ]) = { x = t₀, … }
+ 
+ 
+ Decode a CBOR array beginning with a `9` as a field access:
+ 
+ 
+-    decode(t₁) = t₀   …
+-    ─────────────────────────────────
+-    decode([ 9, t₁, "x" ]) = t₀.x
++;    decode(t₁) = t₀   …
++;    ─────────────────────────────────
++;    decode([ 9, t₁, "x" ]) = t₀.x
+ 
+ 
+ Decode a CBOR array beginning with a `10` as a record projection:
+ 
+ 
+-    decode(t₁) = t₀   …
+-    ────────────────────────────────────────────────────
+-    decode([ 10, t₁, "x", "y", … ]) = t₀.{ x, y, … }
++;    decode(t₁) = t₀   …
++;    ────────────────────────────────────────────────────
++;    decode([ 10, t₁, "x", "y", … ]) = t₀.{ x, y, … }
+ 
+ 
+     decode(t₁) = t₀   decode(T₁) = T₀
+@@ -1302,9 +1302,9 @@
+ Decode a CBOR array beginning with a `11` as a union type:
+ 
+ 
+-    decode(T₁) = T₀   …
+-    ────────────────────────────────────────────────────────────────
+-    decode([ 11, { "x" = T₁, "y" = null, … } ]) = < x : T₀ | y | … >
++;    decode(T₁) = T₀   …
++;    ────────────────────────────────────────────────────────────────
++;    decode([ 11, { "x" = T₁, "y" = null, … } ]) = < x : T₀ | y | … >
+ 
+ 
+ A decoder MUST NOT attempt to enforce uniqueness of keys.  That is the
+@@ -1393,9 +1393,9 @@
+ Decode a CBOR array beginning with a `18` as a `Text` literal:
+ 
+ 
+-    decode(b₁) = b₀   decode(d₁) = d₀   …   decode(y₁) = y₀
+-    ───────────────────────────────────────────────────────────────────────────────────
+-    decode([ 18, "a", b₁, "c", d₁, "e", …, "x", y₁, "z" ]) = "a${b₀}c${d}e…x${y₀}z"
++;    decode(b₁) = b₀   decode(d₁) = d₀   …   decode(y₁) = y₀
++;    ───────────────────────────────────────────────────────────────────────────────────
++;    decode([ 18, "a", b₁, "c", d₁, "e", …, "x", y₁, "z" ]) = "a${b₀}c${d}e…x${y₀}z"
+ 
+ 
+ ### `assert`
+@@ -1415,36 +1415,36 @@
+ The decoding rules are the exact opposite of the encoding rules:
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", "query" ]) = http://authority/path₀/path₁/…/file?query
++;    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", "query" ]) = http://authority/path₀/path₁/…/file?query
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", null ]) = http://authority/path₀/path₁/…/file
++;    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 0, null, "authority", "path₀", "path₁", …, "file", null ]) = http://authority/path₀/path₁/…/file
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", "query" ]) = https://authority/path₀/path₁/…/file?query
++;    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", "query" ]) = https://authority/path₀/path₁/…/file?query
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", null ]) = https://authority/path₀/path₁/…/file
++;    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 1, null, "authority", "path₀", "path₁", …, "file", null ]) = https://authority/path₀/path₁/…/file
+ 
+ 
+-    ─────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 2, "path₀", "path₁", …, "file" ]) = /path₀/path₁/…/file
++;    ─────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 2, "path₀", "path₁", …, "file" ]) = /path₀/path₁/…/file
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 3, "path₀", "path₁", …, "file" ]) = ./path₀/path₁/…/file
++;    ──────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 3, "path₀", "path₁", …, "file" ]) = ./path₀/path₁/…/file
+ 
+ 
+-    ───────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 4, "path₀", "path₁", …, "file" ]) = ../path₀/path₁/…/file
++;    ───────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 4, "path₀", "path₁", …, "file" ]) = ../path₀/path₁/…/file
+ 
+ 
+-    ──────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, null, 0, 5, "path₀", "path₁", …, "file" ]) = ~/path₀/path₁/…/file
++;    ──────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, null, 0, 5, "path₀", "path₁", …, "file" ]) = ~/path₀/path₁/…/file
+ 
+ 
+     ───────────────────────────────────────
+@@ -1455,20 +1455,20 @@
+     decode([ 24, null, 0, 7 ]) = missing
+ 
+ 
+-    decode([ 24, x, 0, xs… ]) = import
+-    ──────────────────────────────────────────
+-    decode([ 24, x, 1, xs… ]) = import as Text
++;    decode([ 24, x, 0, xs… ]) = import
++;    ──────────────────────────────────────────
++;    decode([ 24, x, 1, xs… ]) = import as Text
+ 
+ 
+-    decode([ 24, x, 0, xs… ]) = import
+-    ──────────────────────────────────────────────
+-    decode([ 24, x, 2, xs… ]) = import as Location
++;    decode([ 24, x, 0, xs… ]) = import
++;    ──────────────────────────────────────────────
++;    decode([ 24, x, 2, xs… ]) = import as Location
+ 
+ 
+-    decode([ 24, null, x, xs… ]) = import
+-    base16encode(rawHash) = base16Hash
+-    ─────────────────────────────────────────────────────────────────────────────
+-    decode([ 24, b"\x12\x20rawHash", x, xs… ]) = import sha256:base16Hash
++;    decode([ 24, null, x, xs… ]) = import
++;    base16encode(rawHash) = base16Hash
++;    ─────────────────────────────────────────────────────────────────────────────
++;    decode([ 24, b"\x12\x20rawHash", x, xs… ]) = import sha256:base16Hash
+ 
+ 
+     decode(headers₀) = headers₁
+@@ -1488,9 +1488,9 @@
+ Decode a CBOR array beginning with a `25` as a `let` expression:
+ 
+ 
+-    decode(A₁) = A₀   decode(a₁) = a₀   decode(b₁) = b₀   ...   decode(z₁) = z₀
+-    ──────────────────────────────────────────────────────────────────────────────────────────
+-    decode([ 25, "x", A₁, a₁, "y", null, b₁, ..., z₁ ]) = let x : A₀ = a₀ let y = b₀ ... in z₀
++;    decode(A₁) = A₀   decode(a₁) = a₀   decode(b₁) = b₀   ...   decode(z₁) = z₀
++;    ──────────────────────────────────────────────────────────────────────────────────────────
++;    decode([ 25, "x", A₁, a₁, "y", null, b₁, ..., z₁ ]) = let x : A₀ = a₀ let y = b₀ ... in z₀
+ 
+ 
+ ### Type annotations

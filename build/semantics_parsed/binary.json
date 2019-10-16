@@ -1,0 +1,6730 @@
+[
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        "n"
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n",
+          "n"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            [
+              "\"",
+              "x",
+              "\""
+            ],
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            [
+              "\"",
+              "x",
+              "\""
+            ],
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/build"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/build",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/fold"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/fold",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/isZero"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/isZero",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/even"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/even",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/odd"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/odd",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/toInteger"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/toInteger",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/show"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/show",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural/subtract"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural/subtract",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/toDouble"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Integer/toDouble",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/show"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Integer/show",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Double/show"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Double/show",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/build"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/build",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/fold"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/fold",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/length"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/length",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/head"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/head",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/last"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/last",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/indexed"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/indexed",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List/reverse"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List/reverse",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional/fold"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Optional/fold",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional/build"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Optional/build",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Text/show"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Text/show",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Bool"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Bool",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Optional"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Optional",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "None"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "None",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Natural"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Natural",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Integer",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Double",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Text"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Text",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "List"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "List",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Type"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Type",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Kind"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Kind",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Sort"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Sort",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "1",
+            ",",
+            " ",
+            [
+              {
+                "variable": "A\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "b\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "1",
+            ",",
+            " ",
+            [
+              [
+                "\"",
+                "x",
+                "\""
+              ],
+              ",",
+              " ",
+              [
+                {
+                  "variable": "A\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "b\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "b\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "2",
+            ",",
+            " ",
+            [
+              {
+                "variable": "A\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "B\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "2",
+            ",",
+            " ",
+            [
+              [
+                "\"",
+                "x",
+                "\""
+              ],
+              ",",
+              " ",
+              [
+                {
+                  "variable": "A\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "B\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "A\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "B\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "||"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "0",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "&&"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "1",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "=="
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "2",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "!="
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "3",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "+"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "4",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "*"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "5",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "++"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "6",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "#"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "7",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "8",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "9",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "10",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "?"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "11",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "==="
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "12",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "List"
+                },
+                {
+                  "variable": "T\u2080"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "nil"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "4",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "nil"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "28",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "some"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "5",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "t\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "6",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "u\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "6",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "u\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "u\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "to_map"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "27",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "t\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "27",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "x"
+            }
+          ],
+          "name": "field_select"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "9",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          [
+            "\"",
+            "x",
+            "\""
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "10",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          [
+            "[",
+            " ",
+            [],
+            {
+              "variable": "T\u2081"
+            },
+            " ",
+            "]"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "True"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        "True"
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "False"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        "False"
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "14",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "natural"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "15",
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "natural"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "15",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "-",
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "-",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "integer"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n.n_h",
+          "(",
+          "0x7e00",
+          ")"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n.n_h",
+          "(",
+          "0x7c00",
+          ")"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n.n_h",
+          "(",
+          "0xfc00",
+          ")"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n.n_h",
+          "(",
+          "0x0000",
+          ")"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "n.n_h",
+          "(",
+          "0x8000",
+          ")"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        "n.n"
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        "n.n_s"
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "assert"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "19",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "http_import_using"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              {
+                "variable": "x"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "y"
+                },
+                ",",
+                " ",
+                [
+                  "0",
+                  ",",
+                  " ",
+                  [
+                    {
+                      "variable": "h"
+                    },
+                    ",",
+                    " ",
+                    []
+                  ]
+                ]
+              ]
+            ]
+          ],
+          {
+            "variable": "xs"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "name": "http_import"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          [
+            "[",
+            " ",
+            [
+              "24",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "x"
+                },
+                ",",
+                " ",
+                [
+                  {
+                    "variable": "y"
+                  },
+                  ",",
+                  " ",
+                  [
+                    "0",
+                    ",",
+                    " ",
+                    [
+                      "null",
+                      ",",
+                      " ",
+                      []
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            {
+              "variable": "xs"
+            },
+            " ",
+            "]"
+          ]
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "headers"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "h"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "http_import_using"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              {
+                "variable": "x"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "y"
+                },
+                ",",
+                " ",
+                [
+                  "1",
+                  ",",
+                  " ",
+                  [
+                    {
+                      "variable": "h"
+                    },
+                    ",",
+                    " ",
+                    []
+                  ]
+                ]
+              ]
+            ]
+          ],
+          {
+            "variable": "xs"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "name": "http_import"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          [
+            "[",
+            " ",
+            [
+              "24",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "x"
+                },
+                ",",
+                " ",
+                [
+                  {
+                    "variable": "y"
+                  },
+                  ",",
+                  " ",
+                  [
+                    "1",
+                    ",",
+                    " ",
+                    [
+                      "null",
+                      ",",
+                      " ",
+                      []
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            {
+              "variable": "xs"
+            },
+            " ",
+            "]"
+          ]
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "headers"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "h"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "env_import"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              [
+                "0",
+                ",",
+                " ",
+                [
+                  "6",
+                  ",",
+                  " ",
+                  []
+                ]
+              ]
+            ]
+          ],
+          [
+            "\"",
+            "x",
+            "\""
+          ],
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "missing_import"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              [
+                "0",
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          "7",
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "26",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "t\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "CBORTag",
+          " ",
+          "55799",
+          " ",
+          {
+            "variable": "x"
+          }
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "variable": "e"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "x"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/build",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/fold",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/isZero",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/isZero"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/even",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/even"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/odd",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/odd"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/toInteger",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/toInteger"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural/show",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Integer/toDouble",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Integer/toDouble"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Integer/show",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Double/show",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Double/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/build",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/fold",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/length",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/length"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/head",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/head"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/last",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/last"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/indexed",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/indexed"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List/reverse",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List/reverse"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Optional/fold",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Optional/fold"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Optional/build",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Optional/build"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Text/show",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Text/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Bool",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Bool"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Optional",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Optional"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "None",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "None"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Natural",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Integer",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Double",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Text",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Text"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "List",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "List"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Type",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Type"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Kind",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Kind"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Sort",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Sort"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            [
+              "\"",
+              "x",
+              "\""
+            ],
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            [
+              "\"",
+              "x",
+              "\""
+            ],
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "n"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "n",
+          "n"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "var"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "1",
+            ",",
+            " ",
+            [
+              {
+                "variable": "A\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "b\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "A\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "b\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "1",
+            ",",
+            " ",
+            [
+              [
+                "\"",
+                "x",
+                "\""
+              ],
+              ",",
+              " ",
+              [
+                {
+                  "variable": "A\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "b\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "b\u2080"
+            }
+          ],
+          "name": "lambda"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "A\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "b\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "b\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "2",
+            ",",
+            " ",
+            [
+              {
+                "variable": "A\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "B\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "_"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "A\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "B\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "2",
+            ",",
+            " ",
+            [
+              [
+                "\"",
+                "x",
+                "\""
+              ],
+              ",",
+              " ",
+              [
+                {
+                  "variable": "A\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "B\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "x"
+            },
+            {
+              "variable": "A\u2080"
+            },
+            {
+              "variable": "B\u2080"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "A\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "A\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "B\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "B\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "0",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "||"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "1",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "&&"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "2",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "=="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "3",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "!="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "4",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "+"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "5",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "*"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "6",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "++"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "7",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "#"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "8",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2227"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "9",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2afd"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "10",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "\u2a53"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "11",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "?"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "12",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "==="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "4",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "List"
+                },
+                {
+                  "variable": "T\u2080"
+                }
+              ],
+              "name": "application"
+            }
+          ],
+          "name": "nil"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "28",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "nil"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "5",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "t\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "some"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "6",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "u\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            }
+          ],
+          "name": "merge"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "u\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "6",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "u\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "u\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "u\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "u\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "27",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "t\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            }
+          ],
+          "name": "to_map"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "27",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            ":"
+          ],
+          "name": "to_map_typed"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "10",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          [
+            "[",
+            " ",
+            [],
+            {
+              "variable": "T\u2081"
+            },
+            " ",
+            "]"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "fields_projection_by_type"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "True"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "True"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "False"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "False"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "14",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "if_then_else"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "15",
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "15",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "natural"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "-",
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "-",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          "n",
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "16",
+            ",",
+            " ",
+            []
+          ],
+          [
+            "n",
+            "n"
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "n.n"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "n.n_s"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        "n.n_h"
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "double"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "19",
+            ",",
+            " ",
+            []
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "assert"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              [
+                "0",
+                ",",
+                " ",
+                [
+                  "6",
+                  ",",
+                  " ",
+                  []
+                ]
+              ]
+            ]
+          ],
+          [
+            "\"",
+            "x",
+            "\""
+          ],
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "env_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              "null",
+              ",",
+              " ",
+              [
+                "0",
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          "7",
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "missing_import"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              {
+                "variable": "x"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "y"
+                },
+                ",",
+                " ",
+                [
+                  "0",
+                  ",",
+                  " ",
+                  [
+                    {
+                      "variable": "headers\u2080"
+                    },
+                    ",",
+                    " ",
+                    []
+                  ]
+                ]
+              ]
+            ]
+          ],
+          {
+            "variable": "xs"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "http_import_using"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "headers\u2080"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "headers\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          [
+            "[",
+            " ",
+            [
+              "24",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "x"
+                },
+                ",",
+                " ",
+                [
+                  {
+                    "variable": "y"
+                  },
+                  ",",
+                  " ",
+                  [
+                    "0",
+                    ",",
+                    " ",
+                    [
+                      "null",
+                      ",",
+                      " ",
+                      []
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            {
+              "variable": "xs"
+            },
+            " ",
+            "]"
+          ]
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "name": "http_import"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "24",
+            ",",
+            " ",
+            [
+              {
+                "variable": "x"
+              },
+              ",",
+              " ",
+              [
+                {
+                  "variable": "y"
+                },
+                ",",
+                " ",
+                [
+                  "1",
+                  ",",
+                  " ",
+                  [
+                    {
+                      "variable": "headers\u2080"
+                    },
+                    ",",
+                    " ",
+                    []
+                  ]
+                ]
+              ]
+            ]
+          ],
+          {
+            "variable": "xs"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "http_import_using"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "headers\u2080"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "headers\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          [
+            "[",
+            " ",
+            [
+              "24",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "x"
+                },
+                ",",
+                " ",
+                [
+                  {
+                    "variable": "y"
+                  },
+                  ",",
+                  " ",
+                  [
+                    "1",
+                    ",",
+                    " ",
+                    [
+                      "null",
+                      ",",
+                      " ",
+                      []
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            {
+              "variable": "xs"
+            },
+            " ",
+            "]"
+          ]
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "name": "http_import"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "26",
+            ",",
+            " ",
+            [
+              {
+                "variable": "t\u2081"
+              },
+              ",",
+              " ",
+              []
+            ]
+          ],
+          {
+            "variable": "T\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "t\u2080"
+            },
+            {
+              "variable": "T\u2080"
+            }
+          ],
+          "name": "type_bound"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "t\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "T\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "T\u2080"
+          }
+        ]
+      }
+    ]
+  }
+]
