@@ -309,6 +309,42 @@
     "conclusion": {
       "arguments": [
         {
+          "name": "Integer/negate"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Integer/negate",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/clamp"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "\"",
+          "Integer/clamp",
+          "\""
+        ]
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
           "name": "Double/show"
         }
       ],
@@ -1937,6 +1973,81 @@
             " ",
             [
               "12",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "l\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "encoded",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ],
+      "name": "encoded",
+      "results": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "13",
               ",",
               " ",
               [
@@ -3627,6 +3738,42 @@
       "results": [
         {
           "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Integer/negate",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Integer/negate"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "\"",
+          "Integer/clamp",
+          "\""
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "name": "Integer/clamp"
         }
       ]
     },
@@ -5407,6 +5554,81 @@
             }
           ],
           "name": "==="
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "l\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "l\u2080"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2081"
+          }
+        ],
+        "name": "decoded",
+        "results": [
+          {
+            "variable": "r\u2080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        [
+          "[",
+          " ",
+          [
+            "3",
+            ",",
+            " ",
+            [
+              "13",
+              ",",
+              " ",
+              [
+                {
+                  "variable": "l\u2081"
+                },
+                ",",
+                " ",
+                []
+              ]
+            ]
+          ],
+          {
+            "variable": "r\u2081"
+          },
+          " ",
+          "]"
+        ]
+      ],
+      "name": "decoded",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "l\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
         }
       ]
     },

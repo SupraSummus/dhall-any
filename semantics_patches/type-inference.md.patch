@@ -1,5 +1,5 @@
---- dhall-lang/standard/type-inference.md	2019-10-14 17:04:42.967901045 +0200
-+++ build/semantics_raw/type-inference.md	2019-10-14 18:39:03.947948646 +0200
+--- dhall-lang/standard/type-inference.md	2020-04-05 15:25:43.717586781 +0200
++++ build/semantics_raw/type-inference.md	2020-04-05 18:13:58.927624486 +0200
 @@ -298,13 +298,13 @@
  non-empty) or from the type annotation (if empty):
  
@@ -40,7 +40,7 @@
      Γ ⊢ { x : T, xs… } : t₂
  
  
-@@ -564,19 +564,19 @@
+@@ -565,19 +565,19 @@
  
  
      Γ ⊢ e : { x : T, xs… }
@@ -66,4 +66,25 @@
 +    Γ ⊢ (toMap e : T₁) : T₀
  
  
- ## Unions
+ You can complete a record literal using the record completion operator (`T::r`),
+@@ -598,7 +598,7 @@
+ desugared form:
+ 
+ 
+-    Γ ⊢ ((T.default ⫽ r) : T.Type) : U
++    Γ ⊢ ((T.`default` ⫽ r) : T.`Type`) : U
+     ──────────────────────────────────
+     Γ ⊢ T::r : U
+ 
+@@ -721,9 +721,9 @@
+ 
+ `Optional`s can also be `merge`d as if they had type `< None | Some : A >`:
+ 
+-    
++
+     Γ₀ ⊢ o : Optional A
+-    ↑(1, x, 0, (Γ₀, x : < None | Some : A >)) = Γ₁
++    ↑(1, x, 0, (Γ₀, x : < `None` | `Some` : A >)) = Γ₁
+     Γ₁ ⊢ merge t x : T
+     ──────────────────────────────────
+     Γ ⊢ merge t o : T

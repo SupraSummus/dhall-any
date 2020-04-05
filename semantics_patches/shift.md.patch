@@ -1,5 +1,5 @@
---- dhall-lang/standard/shift.md	2019-10-14 17:04:42.967901045 +0200
-+++ build/semantics_raw/shift.md	2019-10-14 18:38:43.877948477 +0200
+--- dhall-lang/standard/shift.md	2020-04-05 15:25:43.717586781 +0200
++++ build/semantics_raw/shift.md	2020-04-05 18:13:35.067624397 +0200
 @@ -47,8 +47,8 @@
  large as the lower bound:
  

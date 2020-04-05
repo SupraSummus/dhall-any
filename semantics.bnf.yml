@@ -39,7 +39,7 @@ productions:
   context:
     - [ε]
     - [context_var]
-    - [context_var, ",", _, var, _, ":", _, var]
+    - [context_var, ",", _, var, _, ":", _, expr0]
     - ["(", context, ")"]
 
   expr0:
@@ -70,6 +70,7 @@ productions:
     - [merge, _, expr3, _, expr3]
     - [toMap, _, expr3, _, ":", _, expr3]
     - [toMap, _, expr3]
+    - [expr3, ":", ":", "expr3"]
     - [assert, _, ":", _, expr3]
     - [expr3, _, ":", _, expr3]
     - [expr3]
@@ -81,7 +82,8 @@ productions:
     - [var_or_label, "@", nat]
     - [quoted_label]
 
-    - ["0"]
+    - ["0"]  # zero as a natural
+    - ["+", "0"]  # zero as an integer
     - ["1"]
 
     - ["[", _, expr0, _, "]"]
@@ -91,6 +93,7 @@ productions:
     - [expr3, _, binop2, _, var]
 
     - [expr3, ".", var]
+    - [expr3, ".", quoted_label]
     - [expr3, ".", "(", expr0, ")"]
     - [var, ".", "{", "}"]
     - [expr3, ".", "{", _, var, _, "}"]
@@ -99,9 +102,12 @@ productions:
 
     - [var_nat, ".", var_nat]  # double literal
     - ['"', var_nat, ".", var_nat, '"']  # conversion double -> text
+
     - [var_nat]  # natural literal
     - ["+", var_nat]  # conversion natural -> integer
+    - ["-", var_nat]  # conversion natural -> negative integer
     - ['"', var_nat, '"']  # conversion natural -> text
+
     - ["±", var_nat]  # integer literal
     - ["±", var_nat, ".", "0"]  # conversion int -> double
     - ['"', "±", var_nat, '"']  # conversion int -> text
@@ -129,6 +135,7 @@ productions:
     - ["<", _, var, _, ":", _, var, _, ">"]
     - ["<", _, var, _, ":", _, var, _, "|", _, var*, _, ">"]
     - ["<", _, var, _, "|", _, var*, _, ">"]
+    - ["<", _, var_or_label, _, "|", _, var_or_label, _, ":", _, var, _, ">"]
     - ["<", _, var, _, "=", _, var, _, ">"]
     - ["<", _, var, _, "=", _, var, _, "|", _, var*, _, ">"]
     - ["<", _, var, _, "=", _, var, _, "|", _, var, _, ":", _, var, _, "|", _, var*, _, ">"]
@@ -136,8 +143,7 @@ productions:
     - [Some, _, var]
     - [None]
     - [Natural, /, natural_builtin]
-    - [Integer, /, toDouble]
-    - [Integer, /, show]
+    - [Integer, /, integer_builtin]
     - [Double, /, show]
     - [List, /, list_builtin]
     - [Optional, /, fold]
@@ -183,6 +189,11 @@ productions:
     - [last]
     - [indexed]
     - [reverse]
+  integer_builtin:
+    - [toDouble]
+    - [show]
+    - [negate]
+    - [clamp]
   binop0:
     - ["#"]
   binop1:
@@ -424,3 +435,5 @@ string_terminals:
   - "missing"
   - "decode"
   - "CBORTag"
+  - "negate"
+  - "clamp"

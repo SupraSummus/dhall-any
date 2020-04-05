@@ -1,6 +1,6 @@
---- dhall-lang/standard/beta-normalization.md	2019-10-14 17:04:42.957901045 +0200
-+++ build/semantics_raw/beta-normalization.md	2019-10-14 18:38:33.427948390 +0200
-@@ -667,9 +667,9 @@
+--- dhall-lang/standard/beta-normalization.md	2020-04-05 15:25:43.717586781 +0200
++++ build/semantics_raw/beta-normalization.md	2020-04-05 18:13:22.857624351 +0200
+@@ -656,9 +656,9 @@
  Or in other words:
  
  
@@ -13,7 +13,7 @@
  
  
  Otherwise, in isolation `Text/show` is in normal form:
-@@ -750,8 +750,8 @@
+@@ -728,8 +728,8 @@
      ls₀ ⇥ [ ls₁… ]
      rs₀ ⇥ [ rs₁… ]
      [ ls₁… ] # [ rs₁… ] ⇥ t
@@ -24,7 +24,7 @@
  
  
  Also, simplify the "list concatenation" operator if either argument normalizes
-@@ -772,7 +772,7 @@
+@@ -750,7 +750,7 @@
  
  
      ls₀ ⇥ ls₁   rs₀ ⇥ rs₁
@@ -33,7 +33,7 @@
      ls₀ # rs₀ ⇥ ls₁ # rs₁
  
  
-@@ -810,9 +810,9 @@
+@@ -788,9 +788,9 @@
      f as ⇥ None A₀
  
  
@@ -46,7 +46,7 @@
  
  
  `List/indexed` tags each element of the list with the element's index:
-@@ -820,12 +820,12 @@
+@@ -798,12 +798,12 @@
  
      f ⇥ List/indexed A₀   as ⇥ [] : A₁
      ───────────────────────────────────────────────
@@ -63,7 +63,7 @@
  
  
  `List/reverse` reverses the elements of the list:
-@@ -836,9 +836,9 @@
+@@ -814,9 +814,9 @@
      f as ⇥ [] : A₁
  
  
@@ -76,7 +76,7 @@
  
  
  All of the built-in functions on `List`s are in normal form:
-@@ -988,7 +988,7 @@
+@@ -957,7 +957,7 @@
  
  
      t₀ ⇥ { xs… } ⫽ t₁   t₁.x ⇥ v
@@ -85,7 +85,7 @@
      t₀.x ⇥ v
  
  
-@@ -998,7 +998,7 @@
+@@ -967,7 +967,7 @@
  
  
      t₀ ⇥ t₁ ⫽ { xs… }   t₁.x ⇥ v
@@ -94,7 +94,7 @@
      t₀.x ⇥ v
  
  
-@@ -1012,7 +1012,7 @@
+@@ -981,7 +981,7 @@
  
  
      t₀ ⇥ { xs… } ∧ t₁   t₁.x ⇥ v
@@ -103,7 +103,7 @@
      t₀.x ⇥ v
  
  
-@@ -1022,7 +1022,7 @@
+@@ -991,7 +991,7 @@
  
  
      t₀ ⇥ t₁ ∧ { xs… }   t₁.x ⇥ v
@@ -112,7 +112,7 @@
      t₀.x ⇥ v
  
  
-@@ -1062,9 +1062,9 @@
+@@ -1031,9 +1031,9 @@
  
  
      t₀ ⇥ l ⫽ { rs… }
@@ -124,7 +124,7 @@
      t₀.{ xs… } ⇥ t₁
  
  
-@@ -1080,9 +1080,9 @@
+@@ -1049,9 +1049,9 @@
  
  
      s ⇥ { ss… }
@@ -137,7 +137,7 @@
      t.(s) ⇥ ts₁
  
  
-@@ -1121,7 +1121,7 @@
+@@ -1090,7 +1090,7 @@
  
  
      l₀ ⇥ l₁   r₀ ⇥ r₁
@@ -146,7 +146,7 @@
      l₀ ∧ r₀ ⇥ l₁ ∧ r₁
  
  
-@@ -1161,7 +1161,7 @@
+@@ -1130,7 +1130,7 @@
  
  
      l₀ ⇥ l₁   r₀ ⇥ r₁
@@ -155,7 +155,7 @@
      l₀ ⫽ r₀ ⇥ l₁ ⫽ r₁
  
  
-@@ -1197,7 +1197,7 @@
+@@ -1166,7 +1166,7 @@
  
  
      l₀ ⇥ l₁   r₀ ⇥ r₁
@@ -164,7 +164,7 @@
      l₀ ⩓ r₀ ⇥ l₁ ⩓ r₁
  
  
-@@ -1205,17 +1205,17 @@
+@@ -1174,17 +1174,17 @@
  item represents a field. The value "x" below represents the text value of the field name `x`.
  
  
@@ -188,3 +188,46 @@
  
  
      t ⇥ {=}   T₀ ⇥ T₁
+@@ -1209,8 +1209,8 @@
+ accordingly and continue to normalize:
+ 
+ 
+-    ((T.default ⫽ r) : T.Type) ⇥ e
+-    ──────────────────────────────
++    ((T.`default` ⫽ r) : T.`Type`) ⇥ e
++    ──────────────────────────────────
+     T::r ⇥ e
+ 
+ 
+@@ -1287,23 +1287,23 @@
+ `< None | Some : A >`:
+ 
+ 
+-    t ⇥ { Some = f, … }   o ⇥ Some a   f a ⇥ b
+-    ──────────────────────────────────────────
++    t ⇥ { `Some` = f, … }   o ⇥ Some a   f a ⇥ b
++    ────────────────────────────────────────────
+     merge t o : T ⇥ b
+ 
+ 
+-    t ⇥ { Some = f, … }   o ⇥ Some a   f a ⇥ b
+-    ──────────────────────────────────────────
++    t ⇥ { `Some` = f, … }   o ⇥ Some a   f a ⇥ b
++    ────────────────────────────────────────────
+     merge t o ⇥ b
+ 
+ 
+-    t ⇥ { None = v, … }   o ⇥ None A
+-    ────────────────────────────────
++    t ⇥ { `None` = v, … }   o ⇥ None A
++    ──────────────────────────────────
+     merge t o : T ⇥ v
+ 
+ 
+-    t ⇥ { None = v, … }   o ⇥ None A
+-    ────────────────────────────────
++    t ⇥ { `None` = v, … }   o ⇥ None A
++    ──────────────────────────────────
+     merge t o ⇥ v
+ 
+ 

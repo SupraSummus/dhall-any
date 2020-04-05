@@ -4763,6 +4763,78 @@
         {
           "children": [
             {
+              "variable": "T"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "U"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "T"
+                      },
+                      "`default`"
+                    ],
+                    "name": "field_label_select"
+                  },
+                  {
+                    "variable": "r"
+                  }
+                ],
+                "name": "\u2afd"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "T"
+                  },
+                  "`Type`"
+                ],
+                "name": "field_label_select"
+              }
+            ],
+            "name": "type_bound"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "U"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
               "name": "nil"
             }
           ],
@@ -5142,7 +5214,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "ts"
@@ -5325,7 +5397,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "ts"
@@ -5373,7 +5445,7 @@
                         "variable": "x"
                       }
                     ],
-                    "name": "label"
+                    "name": "empty_alternative"
                   },
                   {
                     "variable": "ts"
@@ -5844,7 +5916,7 @@
                         "variable": "y"
                       }
                     ],
-                    "name": "label"
+                    "name": "empty_alternative"
                   },
                   {
                     "variable": "us"
@@ -5923,6 +5995,154 @@
         "results": [
           {
             "variable": "T\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "o"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "variable": "T"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2080"
+          },
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "Optional"
+              },
+              {
+                "variable": "A"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "name": "inc"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "name": "zero"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "variable": "x"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "name": "None"
+                              }
+                            ],
+                            "name": "empty_alternative"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "name": "Some"
+                                  },
+                                  {
+                                    "variable": "A"
+                                  }
+                                ],
+                                "name": "field"
+                              },
+                              {
+                                "name": "nil"
+                              }
+                            ],
+                            "name": "list"
+                          }
+                        ],
+                        "name": "list"
+                      }
+                    ],
+                    "name": "union_type"
+                  }
+                ],
+                "name": "field"
+              },
+              {
+                "variable": "\u0393\u2080"
+              }
+            ],
+            "name": "list"
+          }
+        ],
+        "name": "context_shifted",
+        "results": [
+          {
+            "variable": "\u0393\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "\u0393\u2081"
+          },
+          {
+            "children": [
+              {
+                "variable": "t"
+              },
+              {
+                "variable": "x"
+              }
+            ],
+            "name": "merge"
+          }
+        ],
+        "name": "inferred_type",
+        "results": [
+          {
+            "variable": "T"
           }
         ]
       }
@@ -6018,6 +6238,66 @@
             },
             {
               "name": "Double"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Integer/negate"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Integer"
+            },
+            {
+              "name": "Integer"
+            }
+          ],
+          "name": "forall"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "\u0393"
+        },
+        {
+          "name": "Integer/clamp"
+        }
+      ],
+      "name": "inferred_type",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "_"
+            },
+            {
+              "name": "Integer"
+            },
+            {
+              "name": "Natural"
             }
           ],
           "name": "forall"

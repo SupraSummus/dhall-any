@@ -2197,6 +2197,65 @@
           "children": [
             {
               "variable": "T\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "apha_normalized",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
             }
           ],
           "name": "assert"
@@ -2824,7 +2883,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2080"
@@ -2848,7 +2907,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2081"
@@ -3098,6 +3157,38 @@
       "results": [
         {
           "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/negate"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Integer/negate"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/clamp"
+        }
+      ],
+      "name": "apha_normalized",
+      "results": [
+        {
+          "name": "Integer/clamp"
         }
       ]
     },

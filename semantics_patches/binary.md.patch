@@ -1,6 +1,6 @@
---- dhall-lang/standard/binary.md	2019-10-14 17:04:42.967901045 +0200
-+++ build/semantics_raw/binary.md	2019-10-16 19:14:10.920499724 +0200
-@@ -317,9 +317,9 @@
+--- dhall-lang/standard/binary.md	2020-04-05 15:25:43.717586781 +0200
++++ build/semantics_raw/binary.md	2020-04-05 18:12:56.717624254 +0200
+@@ -325,9 +325,9 @@
  applied to multiple arguments is stored within a single array:
  
  
@@ -13,7 +13,16 @@
  
  
  ### Functions
-@@ -448,9 +448,9 @@
+@@ -437,7 +437,7 @@
+ 
+     encode(l₀) = l₁   encode(r₀) = r₁
+     ────────────────────────────────────
+-    encode(l₀ :: r₀) = [ 3, 13, l₁, r₁ ]
++    encode(l₀::r₀) = [ 3, 13, l₁, r₁ ]
+ 
+ 
+ ### `List`
+@@ -461,9 +461,9 @@
  Non-empty `List`s don't store their type, but do store their elements inline:
  
  
@@ -26,7 +35,7 @@
  
  
  ### `Some`
-@@ -500,17 +500,17 @@
+@@ -513,17 +513,17 @@
  Dhall record types translate to CBOR maps:
  
  
@@ -50,7 +59,7 @@
  
  
  Note: the record fields should be sorted before translating them to CBOR maps.
-@@ -519,7 +519,7 @@
+@@ -532,7 +532,7 @@
  Field access:
  
  
@@ -59,7 +68,7 @@
      ─────────────────────────────────
      encode(t₀.x) = [ 9, t₁, "x" ]
  
-@@ -527,9 +527,9 @@
+@@ -540,9 +540,9 @@
  ... is encoded differently than record projection:
  
  
@@ -72,7 +81,7 @@
  
  
  Record projection by type is encoded as follows:
-@@ -545,9 +545,9 @@
+@@ -558,9 +558,9 @@
  Dhall union types translate to CBOR maps:
  
  
@@ -85,7 +94,7 @@
  
  
  Union constructors (`U.x`) are encoded according to the rule for record field
-@@ -556,17 +556,17 @@
+@@ -569,17 +569,17 @@
  The (now-removed) union literal syntax used to be encoded using a leading 12:
  
  
@@ -109,7 +118,7 @@
  
  
  Avoid reusing the numbers 12 and 13 as long as possible until we run out of
-@@ -688,9 +688,9 @@
+@@ -701,9 +701,9 @@
  interpolated expressions:
  
  
@@ -122,7 +131,7 @@
  
  In other words: the amount of encoded elements is always an odd number, with the
  odd elements being strings and the even ones being interpolated expressions.
-@@ -752,21 +752,21 @@
+@@ -765,21 +765,21 @@
  The full rules are:
  
  
@@ -152,7 +161,7 @@
  
  
  If you import `using headers`, then the fourth element contains the import
-@@ -788,24 +788,24 @@
+@@ -801,24 +801,24 @@
  Absolute file paths are tokenized in the same way:
  
  
@@ -185,7 +194,7 @@
  
  
  Environment variables are also treated as another scheme:
-@@ -828,10 +828,10 @@
+@@ -841,10 +841,10 @@
  so this rule suffices:
  
  
@@ -200,7 +209,7 @@
  
  
  
-@@ -839,27 +839,27 @@
+@@ -852,27 +852,27 @@
  instead of `0`:
  
  
@@ -237,7 +246,7 @@
  
  
  ### Type annotations
-@@ -1070,9 +1070,9 @@
+@@ -1091,9 +1091,9 @@
  element is the function and the remaining elements are the function arguments:
  
  
@@ -250,7 +259,16 @@
  
  
  A decoder MUST require at least 1 function argument.  In other words, a decode
-@@ -1210,9 +1210,9 @@
+@@ -1213,7 +1213,7 @@
+ 
+     decode(l₁) = l₀   decode(r₁) = r₀
+     ────────────────────────────────────
+-    decode([ 3, 13, l₁, r₁ ]) = l₀ :: r₀
++    decode([ 3, 13, l₁, r₁ ]) = l₀::r₀
+ 
+ 
+ ### `List`
+@@ -1236,9 +1236,9 @@
  If the list is non-empty then the type MUST be `null`:
  
  
@@ -263,7 +281,7 @@
  
  
  ### `Some`
-@@ -1260,33 +1260,33 @@
+@@ -1286,33 +1286,33 @@
  Decode a CBOR array beginning with a `7` as a record type:
  
  
@@ -309,7 +327,7 @@
  
  
      decode(t₁) = t₀   decode(T₁) = T₀
-@@ -1302,9 +1302,9 @@
+@@ -1328,9 +1328,9 @@
  Decode a CBOR array beginning with a `11` as a union type:
  
  
@@ -322,7 +340,7 @@
  
  
  A decoder MUST NOT attempt to enforce uniqueness of keys.  That is the
-@@ -1393,9 +1393,9 @@
+@@ -1419,9 +1419,9 @@
  Decode a CBOR array beginning with a `18` as a `Text` literal:
  
  
@@ -335,7 +353,7 @@
  
  
  ### `assert`
-@@ -1415,36 +1415,36 @@
+@@ -1441,36 +1441,36 @@
  The decoding rules are the exact opposite of the encoding rules:
  
  
@@ -388,7 +406,7 @@
  
  
      ───────────────────────────────────────
-@@ -1455,20 +1455,20 @@
+@@ -1481,20 +1481,20 @@
      decode([ 24, null, 0, 7 ]) = missing
  
  
@@ -419,7 +437,7 @@
  
  
      decode(headers₀) = headers₁
-@@ -1488,9 +1488,9 @@
+@@ -1514,9 +1514,9 @@
  Decode a CBOR array beginning with a `25` as a `let` expression:
  
  

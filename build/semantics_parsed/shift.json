@@ -3085,6 +3085,92 @@
           "children": [
             {
               "variable": "T\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            },
+            {
+              "variable": "r\u2081"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "T\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "d"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "m"
+          },
+          {
+            "variable": "r\u2080"
+          }
+        ],
+        "name": "expression_shifted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
             }
           ],
           "name": "assert"
@@ -3842,7 +3928,7 @@
                       "variable": "x\u2080"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2080"
@@ -3866,7 +3952,7 @@
                       "variable": "x\u2080"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2081"
@@ -4242,6 +4328,56 @@
       "results": [
         {
           "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Integer/negate"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Integer/negate"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "variable": "d"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "m"
+        },
+        {
+          "name": "Integer/clamp"
+        }
+      ],
+      "name": "expression_shifted",
+      "results": [
+        {
+          "name": "Integer/clamp"
         }
       ]
     },

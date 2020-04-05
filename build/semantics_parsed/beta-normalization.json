@@ -1444,65 +1444,6 @@
               "variable": "f"
             },
             {
-              "variable": "a"
-            }
-          ],
-          "name": "application"
-        }
-      ],
-      "name": "beta_normalized",
-      "results": [
-        {
-          "variable": "b"
-        }
-      ]
-    },
-    "premises": [
-      {
-        "arguments": [
-          {
-            "variable": "f"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "name": "Natural/build"
-          }
-        ]
-      },
-      {
-        "arguments": [
-          {
-            "variable": "a"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "children": [
-              {
-                "name": "Natural/fold"
-              },
-              {
-                "variable": "b"
-              }
-            ],
-            "name": "application"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "conclusion": {
-      "arguments": [
-        {
-          "children": [
-            {
-              "variable": "f"
-            },
-            {
               "variable": "g"
             }
           ],
@@ -4077,81 +4018,6 @@
               "variable": "f"
             },
             {
-              "variable": "a"
-            }
-          ],
-          "name": "application"
-        }
-      ],
-      "name": "beta_normalized",
-      "results": [
-        {
-          "variable": "b"
-        }
-      ]
-    },
-    "premises": [
-      {
-        "arguments": [
-          {
-            "variable": "f"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "children": [
-              {
-                "name": "List/build"
-              },
-              {
-                "variable": "A\u2080"
-              }
-            ],
-            "name": "application"
-          }
-        ]
-      },
-      {
-        "arguments": [
-          {
-            "variable": "a"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "name": "List/fold"
-                  },
-                  {
-                    "variable": "A\u2081"
-                  }
-                ],
-                "name": "application"
-              },
-              {
-                "variable": "b"
-              }
-            ],
-            "name": "application"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "conclusion": {
-      "arguments": [
-        {
-          "children": [
-            {
-              "variable": "f"
-            },
-            {
               "variable": "g"
             }
           ],
@@ -5579,81 +5445,6 @@
         "results": [
           {
             "variable": "t\u2081"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "conclusion": {
-      "arguments": [
-        {
-          "children": [
-            {
-              "variable": "f"
-            },
-            {
-              "variable": "a"
-            }
-          ],
-          "name": "application"
-        }
-      ],
-      "name": "beta_normalized",
-      "results": [
-        {
-          "variable": "b"
-        }
-      ]
-    },
-    "premises": [
-      {
-        "arguments": [
-          {
-            "variable": "f"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "children": [
-              {
-                "name": "Optional/build"
-              },
-              {
-                "variable": "A\u2080"
-              }
-            ],
-            "name": "application"
-          }
-        ]
-      },
-      {
-        "arguments": [
-          {
-            "variable": "a"
-          }
-        ],
-        "name": "beta_normalized",
-        "results": [
-          {
-            "children": [
-              {
-                "children": [
-                  {
-                    "name": "Optional/fold"
-                  },
-                  {
-                    "variable": "A\u2081"
-                  }
-                ],
-                "name": "application"
-              },
-              {
-                "variable": "b"
-              }
-            ],
-            "name": "application"
           }
         ]
       }
@@ -9439,6 +9230,72 @@
         {
           "children": [
             {
+              "variable": "T"
+            },
+            {
+              "variable": "r"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "variable": "e"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "variable": "T"
+                      },
+                      "`default`"
+                    ],
+                    "name": "field_label_select"
+                  },
+                  {
+                    "variable": "r"
+                  }
+                ],
+                "name": "\u2afd"
+              },
+              {
+                "children": [
+                  {
+                    "variable": "T"
+                  },
+                  "`Type`"
+                ],
+                "name": "field_label_select"
+              }
+            ],
+            "name": "type_bound"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
               "name": "nil"
             }
           ],
@@ -9567,7 +9424,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2080"
@@ -9591,7 +9448,7 @@
                       "variable": "x"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2081"
@@ -9747,7 +9604,7 @@
                           "variable": "x\u2080"
                         }
                       ],
-                      "name": "label"
+                      "name": "empty_alternative"
                     },
                     {
                       "variable": "xs"
@@ -9785,7 +9642,7 @@
                         "variable": "x\u2080"
                       }
                     ],
-                    "name": "label"
+                    "name": "empty_alternative"
                   },
                   {
                     "variable": "xs"
@@ -10143,7 +10000,7 @@
                             "variable": "x"
                           }
                         ],
-                        "name": "label"
+                        "name": "empty_alternative"
                       },
                       {
                         "variable": "_"
@@ -10241,7 +10098,7 @@
                             "variable": "x"
                           }
                         ],
-                        "name": "label"
+                        "name": "empty_alternative"
                       },
                       {
                         "variable": "_"
@@ -10257,6 +10114,368 @@
               }
             ],
             "name": "field_select"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "o"
+            },
+            {
+              "variable": "T"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "variable": "b"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "Some"
+                      },
+                      {
+                        "variable": "f"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "_"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "a"
+              }
+            ],
+            "name": "some"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "f"
+              },
+              {
+                "variable": "a"
+              }
+            ],
+            "name": "application"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "o"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "variable": "b"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "Some"
+                      },
+                      {
+                        "variable": "f"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "_"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "a"
+              }
+            ],
+            "name": "some"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "children": [
+              {
+                "variable": "f"
+              },
+              {
+                "variable": "a"
+              }
+            ],
+            "name": "application"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "variable": "b"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "o"
+            },
+            {
+              "variable": "T"
+            }
+          ],
+          "name": "merge_typed"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "variable": "v"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "None"
+                      },
+                      {
+                        "variable": "v"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "_"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "None"
+              },
+              {
+                "variable": "A"
+              }
+            ],
+            "name": "application"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "t"
+            },
+            {
+              "variable": "o"
+            }
+          ],
+          "name": "merge"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "variable": "v"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "t"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "None"
+                      },
+                      {
+                        "variable": "v"
+                      }
+                    ],
+                    "name": "field"
+                  },
+                  {
+                    "variable": "_"
+                  }
+                ],
+                "name": "list"
+              }
+            ],
+            "name": "record"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "o"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "None"
+              },
+              {
+                "variable": "A"
+              }
+            ],
+            "name": "application"
           }
         ]
       }
@@ -10537,6 +10756,286 @@
     "conclusion": {
       "arguments": [
         {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "name": "zero"
+            }
+          ],
+          "name": "integer"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "Integer/negate"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "name": "zero"
+              }
+            ],
+            "name": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "n"
+            }
+          ],
+          "name": "natural_to_negative_integer"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "Integer/negate"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "natural_to_integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "name": "natural_to_integer"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "Integer/negate"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "n"
+              }
+            ],
+            "name": "natural_to_negative_integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "name": "natural"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "Integer/clamp"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "natural_to_integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "f"
+            },
+            {
+              "variable": "a"
+            }
+          ],
+          "name": "application"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "name": "zero"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "f"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "name": "Integer/clamp"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "a"
+          }
+        ],
+        "name": "beta_normalized",
+        "results": [
+          {
+            "children": [
+              {
+                "variable": "n"
+              }
+            ],
+            "name": "natural_to_negative_integer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
           "name": "Integer/show"
         }
       ],
@@ -10560,6 +11059,38 @@
       "results": [
         {
           "name": "Integer/toDouble"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/negate"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "name": "Integer/negate"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/clamp"
+        }
+      ],
+      "name": "beta_normalized",
+      "results": [
+        {
+          "name": "Integer/clamp"
         }
       ]
     },

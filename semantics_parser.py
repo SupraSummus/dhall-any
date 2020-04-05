@@ -15,7 +15,7 @@ from facts import Fact, Judgement, Variable, Name, ComplexTerm, List
 prettyprinter.install_extras(['dataclasses'])
 
 with open('semantics.bnf.yml', 'rt') as f:
-    grammar = yaml.load(f)
+    grammar = yaml.load(f, Loader=yaml.Loader)
     for s in grammar['string_terminals']:
         assert s not in grammar['terminals']
         grammar['terminals'][s] = ('string', s)
@@ -151,6 +151,7 @@ actions = {
         expression_factory('merge', [2, 4]),
         expression_factory('to_map_typed', [2, 4]),
         expression_factory('to_map', [2]),
+        expression_factory('record_completion', [0, 3]),
         expression_factory('assert', [4]),
         expression_factory('type_bound', [0, 4]),
         pass_single(0),
@@ -164,6 +165,7 @@ actions = {
         lambda _, x: ComplexTerm('var', [Name(x[0]), Name('zero')]),
 
         const(Name('zero')),
+        const(ComplexTerm('integer', [Name('zero')])),
         const(ComplexTerm('s', [Name('zero')])),
 
         expression_factory('single_element_list', [2]),
@@ -173,6 +175,7 @@ actions = {
         binop_factory,
 
         expression_factory('field_select', [0, 2]),
+        expression_factory('field_label_select', [0, 2]),
         expression_factory('fields_projection_by_type', [0, 3]),
         expression_factory('fields_select_empty', [0]),
         expression_factory('fields_select_single', [0, 4]),
@@ -181,9 +184,12 @@ actions = {
 
         complex_term_factory('double', [0]),
         complex_term_factory('double_to_string', [1]),
+
         const_name_factory('natural'),
         const_name_factory('natural_to_integer'),
+        complex_term_factory('natural_to_negative_integer', [1]),
         const_name_factory('natural_to_text'),
+
         const_name_factory('integer'),
         const_name_factory('integer_to_double'),
         const_name_factory('integer_to_text'),
@@ -224,9 +230,13 @@ actions = {
             tail=x[10],
         )]),
         lambda _, x: ComplexTerm('union_type', [List(
-            head=ComplexTerm('label', [x[2]]),
+            head=ComplexTerm('empty_alternative', [x[2]]),
             tail=x[6],
         )]),
+        lambda _, x: ComplexTerm('union_type', [List.from_list([
+            ComplexTerm('empty_alternative', [x[2]]),
+            ComplexTerm('field', [x[6], x[10]]),
+        ])]),
         lambda _, x: ComplexTerm('union', [
             x[2],
             x[6],
@@ -247,11 +257,10 @@ actions = {
         ]),
 
         complex_term_factory('some', [2]),
-        builtin,
-        builtin,
-        builtin,
-        builtin,
-        builtin,
+        builtin,  # none
+        builtin,  # natural
+        builtin,  # integer
+        builtin,  # double
         builtin,
         builtin,
         builtin,
@@ -343,7 +352,10 @@ for i, line in enumerate(sys.stdin):
             judgement = True
     else:
         if judgement:
-            print('line {}'.format(i), file=sys.stderr)
+            print('parsing judgement at lines {} - {}'.format(
+                i - len(current_block_lines) + 1,
+                i,
+            ), file=sys.stderr)
             block = ''.join(current_block_lines)
             t = parser.parse(block)
             if len(t) > 1:

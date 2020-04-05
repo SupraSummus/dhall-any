@@ -3244,6 +3244,92 @@
           "children": [
             {
               "variable": "T\u2080"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "n"
+        },
+        {
+          "variable": "e"
+        }
+      ],
+      "name": "substituted",
+      "results": [
+        {
+          "children": [
+            {
+              "variable": "T\u2081"
+            },
+            {
+              "variable": "r\u2080"
+            }
+          ],
+          "name": "record_completion"
+        }
+      ]
+    },
+    "premises": [
+      {
+        "arguments": [
+          {
+            "variable": "T\u2080"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "n"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "T\u2081"
+          }
+        ]
+      },
+      {
+        "arguments": [
+          {
+            "variable": "r\u2080"
+          },
+          {
+            "variable": "x"
+          },
+          {
+            "variable": "n"
+          },
+          {
+            "variable": "e"
+          }
+        ],
+        "name": "substituted",
+        "results": [
+          {
+            "variable": "r\u2081"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "children": [
+            {
+              "variable": "T\u2080"
             }
           ],
           "name": "assert"
@@ -4001,7 +4087,7 @@
                       "variable": "x\u2080"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2080"
@@ -4034,7 +4120,7 @@
                       "variable": "x\u2080"
                     }
                   ],
-                  "name": "label"
+                  "name": "empty_alternative"
                 },
                 {
                   "variable": "xs\u2081"
@@ -4410,6 +4496,56 @@
       "results": [
         {
           "name": "Integer/show"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/negate"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "n"
+        },
+        {
+          "variable": "e"
+        }
+      ],
+      "name": "substituted",
+      "results": [
+        {
+          "name": "Integer/negate"
+        }
+      ]
+    },
+    "premises": []
+  },
+  {
+    "conclusion": {
+      "arguments": [
+        {
+          "name": "Integer/clamp"
+        },
+        {
+          "variable": "x"
+        },
+        {
+          "variable": "n"
+        },
+        {
+          "variable": "e"
+        }
+      ],
+      "name": "substituted",
+      "results": [
+        {
+          "name": "Integer/clamp"
         }
       ]
     },
