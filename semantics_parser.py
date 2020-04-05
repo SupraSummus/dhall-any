@@ -1,8 +1,8 @@
 import yaml
 import parglare
-from parglare.actions import collect_sep, collect_sep_optional
+from parglare.actions import collect_sep
 import prettyprinter
-from prettyprinter import pprint, cpprint
+from prettyprinter import pprint
 import dataclasses
 import json
 
@@ -10,15 +10,17 @@ import sys
 
 from parglare_adapter import to_parglare_grammar
 from facts import Fact, Judgement, Variable, Name, ComplexTerm, List
-#from expressions import Expression
+
 
 prettyprinter.install_extras(['dataclasses'])
+
 
 with open('semantics.bnf.yml', 'rt') as f:
     grammar = yaml.load(f, Loader=yaml.Loader)
     for s in grammar['string_terminals']:
         assert s not in grammar['terminals']
         grammar['terminals'][s] = ('string', s)
+
 
 def pass_many(indexes):
     def action(_, nodes):
@@ -55,8 +57,12 @@ def complex_term_factory(name, indexes):
         ])
     return action
 
+
 expression_factory = complex_term_factory
-binop_factory = lambda _, x: ComplexTerm(x[2], [x[0], x[4]])
+
+
+def binop_factory(_, x):
+    return ComplexTerm(x[2], [x[0], x[4]])
 
 
 def fact_factory(name, indexes, result_indexes):
@@ -139,8 +145,6 @@ actions = {
         expression_factory('lambda', [2, 6, 11]),
         expression_factory('forall', [2, 6, 11]),
         expression_factory('nil', [5]),
-        #expression_factory('nothing', [7]),
-        #expression_factory('just', [2, 10]),
         binop_factory,
         pass_single(0),
     ],
@@ -337,7 +341,6 @@ actions = {
 
 pg_grammar, start = to_parglare_grammar(grammar['productions'], grammar['terminals'], grammar['start'])
 parser = parglare.GLRParser(pg_grammar, ws='', actions=actions)
-
 
 
 current_block_lines = []
